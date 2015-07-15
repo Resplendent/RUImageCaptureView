@@ -4,9 +4,9 @@ PODS:
     - Expecta (~> 1.0)
     - FBSnapshotTestCase (~> 1.8)
   - FBSnapshotTestCase (1.8.1)
-  - ResplendentUtilities (0.2.7)
+  - ResplendentUtilities (0.2.10)
   - RUImageCaptureView (0.1.0):
-    - ResplendentUtilities (= 0.2.7)
+    - ResplendentUtilities (~> 0.2)
   - Specta (1.0.2)
 
 DEPENDENCIES:
@@ -24,8 +24,8 @@ SPEC CHECKSUMS:
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
   Expecta+Snapshots: ca15bfb57e7a0f78f86c7699c2c54ffacfa4ad2a
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  ResplendentUtilities: fec98a58db6572b436b7deb151e091ba3cd301c6
-  RUImageCaptureView: a0ca8961146f2a33fd8980e06f4a2b49b3f8308a
+  ResplendentUtilities: 250f086ae2d01abb8d263f59bd079d407f52bdcb
+  RUImageCaptureView: 6f07031cbdee7a515177f287f34f19e185f7526a
   Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
 COCOAPODS: 0.37.2

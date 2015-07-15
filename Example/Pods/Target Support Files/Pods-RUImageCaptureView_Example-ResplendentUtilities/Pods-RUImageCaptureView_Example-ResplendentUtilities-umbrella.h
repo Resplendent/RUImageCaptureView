@@ -75,6 +75,8 @@
 #import "RUFullscreenRotatingView.h"
 #import "RUFullscreenRotatingViewProtocols.h"
 #import "RUImageViewFullscreenRotatingView.h"
+#import "Blocks+RUMacros.h"
+#import "NSString+RUMacros.h"
 #import "RUActionSheetManagement.h"
 #import "RUCompatability.h"
 #import "RUImageCompatability.h"
