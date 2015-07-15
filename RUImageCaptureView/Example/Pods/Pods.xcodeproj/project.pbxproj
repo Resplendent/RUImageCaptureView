@@ -1,0 +1,2172 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004E66E0A99CE3D5859D446B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		008091E8AD4E96671356DD2B /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E109C21BD790E36D70995DEB /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		00D2341131EA013CD65299CF /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D46E73398EFF79ADF70006 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		011FEFCC096FFFED9E191C88 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 084EAD455DDBAF796E0E755C /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		015D0B50D7927B31B3741913 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9A88D779164084C953E50 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		02400126A0F3E378FA1C60DC /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC76A067FEBE4B6BB88B99F /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		02F6EF7A621382B0728B06D0 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B4F65E6F278845EDF51BD0 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		043C707B8568737C0E73D17C /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F0595501C658BE9440F34DDD /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		044610120B9949566667200A /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = E6875CC26A3F8B601B678AA7 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05F3E3110FDB07612CE84C44 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = B5AA56562A04A67319566D99 /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06AE19A4D75D0CC01E333C71 /* RUImageCaptureView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7A05604570CE6D9C288E8 /* RUImageCaptureView.bundle */; };
+		06DBD42EC1C185F32D09FD29 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C358DD975ECBC31293C531C6 /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0749B0D996627965F2136DA6 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1EE8F568269BA3FCF68239 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09321D54B35BEF2E09C7B8D3 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0227976E55BA23A3AA834 /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0AFD544EBCFEF841B1822B8D /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5DA3C5B809D7A0FA960CAC /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0C0B8F2E78C7EA5C7DFC59A2 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5DCFAD0B6018F9222DAD9E /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DA6D55A3119EC5F832B2302 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BB0DA5F735623545F41C67 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1240512751C0B2AA6FFC61C3 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = B4FE2FD223BACA800C9EBF7B /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13993319E18AE03E26ABF89F /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = FDF7AFFBD6C0576769225368 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1841957BBBE96D5CBC96C4CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A73879D8DD17E3C8FFB2CE /* XCTest.framework */; };
+		1DC69B47F23064D3D7FE5F56 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = F6112F78B8464BF04C0C1549 /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2211D00E42A3FFBA93436E20 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C34C959F4B523C07ECC95C /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-dummy.m */; };
+		22A7CF71E4FB9128DB3C4180 /* RUImageCaptureViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 519625E7B3CC2220868CBCBC /* RUImageCaptureViewProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		258AB50A5294BA6E1DC8358C /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB75AE432EB85A7457E0467 /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A1A260835F016DA362BC3CA /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0ED6B9306BD1701D604CC9 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2A5509E94A075852B0A6E280 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E766EB5FAB55A65F109D117 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2B457E331DAC65639B000FA9 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 412C70C2BE7ADD1B52AE157B /* UIImage+Compare.m */; };
+		2CFF8DCF3A6C55FA8F49714D /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE20BD18E725C44D097B44D /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303F2976ACB8FC82363E8971 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FC1049C7ED3B44FECE3450 /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30870ADF10FC13AE7731F2D1 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F8D437E4E079DEF80DFBA0 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		317329FE4C4F8E166EE7F1F9 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = BC51E6396C93151B80F3172E /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32924EC2EF08D99EB2E70C33 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F26A4ABD26573E25077DD3 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3495C9620B21EED0976DB6FF /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B1082F8868FAABA0B90DFBD2 /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		34D581FCFEB34603D6E36589 /* RUImageCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA23C742BBDAAE637EF727 /* RUImageCaptureView.m */; };
+		35193A871D5207DA133DC540 /* EXPMatchers+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA93D845B4C15FBFB822396 /* EXPMatchers+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A46500410BE08B7FB5BF517 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AD6EFB5EEE0B4758ABA7E8 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A49CF32FA9307292D7D811B /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E29F4D62E6ABDB9C3B2E79 /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ABA7349FB0DCC7030E978A2 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B757F550569A29F3727CE12A /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AE916BB1EFA15056F33E546 /* AVCaptureOutput+RUGetAVCaptureConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F009FE8C2226FDA5B12F95 /* AVCaptureOutput+RUGetAVCaptureConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B0FF4A277ED9259D24625AB /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A44632CA2A8A8664A2D9E /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3F81002F2FAACD950820AEC4 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = E41A231C3CDE1624E0357A72 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		461F89054ABAFFDF8A08DA1A /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC220F0811C55B472A2673F /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		489B8548D0BF9E90E9E76EC0 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CEB49D9A1390C0F38A70D28 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B730F37501FC4588CDF40DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		4C566E63A65F0EEC3767C584 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BAD5333D15F590F3FF1E62 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4F0DD8E8ECECE62E6E58AD70 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8F760B8AAF11BB34961CA1 /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A4F59029B4AA9A846B4922 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BEA382026C82353E5F9FF7 /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		522BAA81B4AE758B6EEB83F0 /* Pods-RUImageCaptureView_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31146E5240DAA4C829CB2E11 /* Pods-RUImageCaptureView_Tests-Expecta-dummy.m */; };
+		53D28073612872081AB7C0B1 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = C55F5AF367AD85A670B963FE /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5524E775BA7583D8A2D562C9 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C0CFF81F9BE524B3BF7C5B /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5535F9B11EEDE72E6E286174 /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 44599E33404002628C7BAA9F /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56B563043CCE4217F62DE7AF /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08EA53EB70A274F36F2938F /* FBSnapshotTestController.m */; };
+		577F5346467F39F654DF089E /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = A5705633D9586D3F86769036 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578E331FF52CCB391EC67105 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11C3000271AB668248808F /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57B0D4CF45F95C88A4656ECE /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = A1690E4F056BE4D797D03F3D /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A6EA36F83718A323D7C97B5 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EF3CBD6EC80C00DE4C11770 /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BBCA9C796C8A70479B312CF /* Pods-RUImageCaptureView_Tests-Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03302223E76F57AF69E4A477 /* Pods-RUImageCaptureView_Tests-Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606CED4C756AB0F75308689C /* Pods-RUImageCaptureView_Tests-Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C38FC8CB97BA087189669C8 /* Pods-RUImageCaptureView_Tests-Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60F992554370F84DA4936278 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		664A38D49E6252B11BF1651F /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F0AFA9E628AF11A3725000 /* FBSnapshotTestCase.framework */; };
+		6888E7A11308C42B2DD82409 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 146F8C7930140EEA490BB119 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A76B23FB572FAF6EEB8EDD2 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDDECE5C7572E72FC28697 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6B4DF36FADBD84E136766699 /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 611F8B213A1F70D76B2871F2 /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BD50EDB3AFD2ED9AD946114 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C3B661D85A2A21D2982E3 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6C3780B4BDF410D79B55C4FE /* EXPMatchers+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 617CB77040EF29BE7CEA018A /* EXPMatchers+FBSnapshotTest.m */; };
+		6CD9D805C04B3BED94FECD3C /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 171E6FFDA4632D4C895F3AF2 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D7E3AF5D80CC07AFAA08CB3 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = B6213524B0DE3A3D6A570C43 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E24F0BD612031EC8B6A15EB /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C75316E33E8A78217F6F8 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E829C3B963B978827595304 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 867A84B1007D1373DBC75E4D /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		70D12219B0072743973386F6 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = 019565E626D096E026F9F637 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722E96B800F9AF0CA40ABC87 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = D8BAF7B2CBA297B7269237B5 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73F0E28116752F64519E7B0F /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856BAE1838A85929E132522A /* Expecta.framework */; };
+		7766DE0248C345A11FC7A63F /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF70200E3F38B22AD65D0B2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78773600953C53CCF7AEBBB3 /* AVCaptureDevice+RUCaptureDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C0BA56CDAC36674C922FA4 /* AVCaptureDevice+RUCaptureDevices.m */; };
+		79452AA9B9A8ADA58AA16DD6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A73879D8DD17E3C8FFB2CE /* XCTest.framework */; };
+		79D1FF34C5C211620962D3A3 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = ED19FD958A415F0BB2D0CB6F /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		79F0908C96425922D4F1CB04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		7A70D1734CF5249C0B1D64DC /* Pods-RUImageCaptureView_Example-RUImageCaptureView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37ED837663FB6357336BF815 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB20C793C967901084A3486 /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 1324B911679EE606E2CE1B51 /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D336954DFAE1D00C99C62C2 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB738B1D6CE468A6FAB36ED /* FBSnapshotTestCase.m */; };
+		812FFD9BE03BBDA62D031AA3 /* Pods-RUImageCaptureView_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 069269860137DFD5B9C229A8 /* Pods-RUImageCaptureView_Tests-Specta-dummy.m */; };
+		840D5CAA11D94101AF274456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		853CF90151D78BDE1A0FBA99 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 5679AD77F36842AD57F8188B /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87AA936AC199C3028B8E56C1 /* AVCaptureDevice+RUCaptureDevices.h in Headers */ = {isa = PBXBuildFile; fileRef = CE825C519C2AF179D1F9FD64 /* AVCaptureDevice+RUCaptureDevices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F0DEAF6003251397CFEA38 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB11015C4008D83E7C96C74 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89FEB4811033E1B970EE2042 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 22577E93D65B1016493557FB /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AC9BB7205071D158790B7F8 /* AVCaptureDevice+RUCaptureDevices.h in Headers */ = {isa = PBXBuildFile; fileRef = CE825C519C2AF179D1F9FD64 /* AVCaptureDevice+RUCaptureDevices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D76C00C0CCBDA8BE5616253 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0901750E8025138E2F926E /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8EB6C643CCA395B4681A9193 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C877278B5740C502217AC7 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-dummy.m */; };
+		8EC5DE5D668A4A80647B8BC6 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C7BF2EC4A2E614B9CE27C3C /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90E318BFA30E266CF6904128 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = FADE75C0CEAF7130369104DD /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91D215AF759D208390E5D3F3 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CEDCDE7659CA0C2E1075082 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92ECCAC955862D1B9D205C50 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0DECB894AA1A7CE8A96E8D /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		947839CA44DF067A2E58681F /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = DE50AE3320D87F8917484949 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9482FA5F325D885FBC990EF8 /* Pods-RUImageCaptureView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C06D2AFF12F484FFB60C1FD6 /* Pods-RUImageCaptureView_Tests-dummy.m */; };
+		96492ED8E0435E0E679AD015 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BA7281278260837B6228C5 /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		97DC1CB99E18F11524DE3393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		9838A60D8EF01E5EC33801D3 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = D6163A7E1195B300C2F8DD5F /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CDF7B699FD6990C79095B44 /* AVCaptureOutput+RUGetAVCaptureConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD971693AC6198728F23349 /* AVCaptureOutput+RUGetAVCaptureConnection.m */; };
+		9D7AB299184F0483A97B10A0 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C9B552F88799E09C6267A30 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D92A9EA3F14E06D571F5D48 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = D601249A4CB968FA3E79E37B /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D9C3B69189C60D508969326 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 738510DCBF849C867A8E510F /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-dummy.m */; };
+		9E7C894070E5990847207C65 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = E405016447FF7800CA1C6E2D /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EAB323D7E8B85BB8682A6BB /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9D7DF985775CE8AD740DF /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9EF3315E0AC9A351F8EF2154 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD3D76490CC33D965D51053 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F5D117E4918C4037C291215 /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B8244113D01DADD50D769 /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A227A4ACB6E55E802A5B96D2 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = B69BD2BAD8EA402905EFCEB7 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A447DFD5DA7CB93532FA658D /* RUImageCaptureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA3BEFB0CFEDB1221ED5EBC /* RUImageCaptureView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67DB4B2EFA369C4AF83A937 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B14F734864C643282C4951 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B240446379BCAF0A0C0CB46C /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6B6CA9523285FAF88CD5DD /* UIImage+Diff.m */; };
+		B32507BDFE14A74D195EEE57 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0C84F29661CF4B45A260BD /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3B58B95C25F245FBBE69C09 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD4AE3D07C1553A5A6A60A7 /* FBSnapshotTestCasePlatform.m */; };
+		B4CE66BCE0EFBB62898FCB43 /* AVCaptureOutput+RUGetAVCaptureConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD971693AC6198728F23349 /* AVCaptureOutput+RUGetAVCaptureConnection.m */; };
+		B53E130FEFD54B9EEFCCF867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		BB439865EDC4FFC4E29E87B9 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = A1446789E22BAA493D1767A8 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC4DDE4177CA4A408683DBFE /* AVCaptureOutput+RUGetAVCaptureConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F009FE8C2226FDA5B12F95 /* AVCaptureOutput+RUGetAVCaptureConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF6E7231398E8CA3C4D035E6 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AE309D5334C75A981A7A7A /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C155709D509EE1D9182E7CEC /* Pods-RUImageCaptureView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E4E4EFCF9587F0397EF14B9 /* Pods-RUImageCaptureView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C1E0223512F414BADC774B /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44BADEE9AFE9B1342601E5 /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C24B0388458ECBF041AC8B07 /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 66532F84BD8EBC3C5D7AB2EF /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3BCA3F2CF3C8464EA109BDB /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 424E24A1C3A7AC80729F525B /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C636959C89A6879D215EEAA4 /* RUImageCaptureView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E61AE2899F3743D11FB50D53 /* RUImageCaptureView.bundle */; };
+		C6747A85180DABE57CBCDD1E /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E3AB2F7EF8B4B979B40A6E /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6A3F05C0C3C78F678122579 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6160EC8684E813F2648964AC /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C959D46F2611B5848012CE0C /* AVCaptureDevice+RUCaptureDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C0BA56CDAC36674C922FA4 /* AVCaptureDevice+RUCaptureDevices.m */; };
+		CA03B1400DA17A252189B429 /* Pods-RUImageCaptureView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B0300FFE03D105F3FEEAB2 /* Pods-RUImageCaptureView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC8E0A8C2EBFE125E222F033 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5E676F405AA9D3D1DC8CE0 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCDD71CA3E036BFFEE20F2A4 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F24C6B969D606C539A85912 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFA979E25D07222B5361C8A0 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5829FDA27C6278139FDBCB5A /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D082E867E3679B14821392F1 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE3DC9F15C10E8B8805012 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3ACBFF8089D67B83CC17CFE /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5B9CCB0AD04E79ACF5C66D /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D528A9A9B714ACBFDD9C82E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB335B51013776A02E03160 /* Foundation.framework */; };
+		D539BCE367D3A52D914FC9D8 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 94952AA1C32412B9226FC3A5 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D748679F4A637642269C65C0 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8A750D86CF9636FE00B95C /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D7FDE36A439020EC9C8BBB44 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDCC0BD4CF1BF4CF0395719 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE91D23512D8152390953E1 /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5A9223340CEFAED5B43ACE /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DD4C0658E370F5A8D67D5ADE /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = F955F8DB0A9508E0AB5689AC /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE680F3AC4CD3D4610CDEA7A /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE3A8E47DDFABC0BCD1B7BE /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DFEE3565353106BB76EAC07D /* RUImageCaptureViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 519625E7B3CC2220868CBCBC /* RUImageCaptureViewProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E18FD2859FEE539DAB3A5207 /* RUImageCaptureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA3BEFB0CFEDB1221ED5EBC /* RUImageCaptureView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E28D2FD2D5204135921F3B30 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7444B9C17A2EE8EAA1A814 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A33E6CCDA7FA84E5477574 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CCD618A44C21624985FD8D /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2E1910736015D53AEC5D41B /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FDBA37FA01A7E00A58D50E2 /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E52C4A16B3022A44D7182375 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A73879D8DD17E3C8FFB2CE /* XCTest.framework */; };
+		E9928CB757406A46111674B9 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C627BBD960CEB7006D10346 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9F6817B32272A94508415CE /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B6549DCE9A2C89EF89C77ED /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA8D165AD756CF34DD2266F7 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF5EC6F6373DF199F329511 /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA7A94210FD99CD3D354FE2 /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 227CE60D7198602E94BB5D36 /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE10B8238EED78A94F68C1FB /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 563C21BF939B82BBAB8DC47A /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4A7FAEE744A90184E880C61 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A73879D8DD17E3C8FFB2CE /* XCTest.framework */; };
+		F5E50C2CEB21359068E5786A /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE8F6C2CFDC403B957B2B6 /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F74E72B8F142CEBBDA45F369 /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = BF712E604172B0FEC52EF2F9 /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F87D837EFEEDA92F3E382527 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D9B665DFE90819E3B3928E /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F986E86A0AF5384359488C38 /* RUImageCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA23C742BBDAAE637EF727 /* RUImageCaptureView.m */; };
+		FB7A809D3729EE6BD49F4B92 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B37BF6DD569E71F1635F5A /* Pods-RUImageCaptureView_Example-RUImageCaptureView-dummy.m */; };
+		FF3C9EC91E61058CA346AFFD /* Pods-RUImageCaptureView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD59543C840FBAEEADABFD /* Pods-RUImageCaptureView_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11563972F309E8FF07033B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F65DFAC0EB2739A51051DCC;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView";
+		};
+		1E9ADAB309A9F73BFEF52EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14BAEB75330947E82B923AE;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots";
+		};
+		394C8DD65B47B51DC308B46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CAD5F8B4368965E7AE8BC83;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-Specta";
+		};
+		A00D5FDFD777BDF90242F456 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A5F06F373D90797FC37D4B;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-RUImageCaptureView";
+		};
+		A9430F499F7150112FC7B213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8358EE35BA950EE7AB3AA880;
+			remoteInfo = "Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView";
+		};
+		AC87F0DA7B378D99861B58F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16C0D89CC1B408C68B7982D;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase";
+		};
+		B5FB57ED5E7DBF7541584120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC3DE5EA32F40F7E05239A2;
+			remoteInfo = "Pods-RUImageCaptureView_Example-RUImageCaptureView";
+		};
+		B6D56960CED298ECA9B59119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16C0D89CC1B408C68B7982D;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase";
+		};
+		C42183DE5250CE9B1586ED9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304FEFFA921F755A53BA5CDA;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-Expecta";
+		};
+		C79E157EBF13D0D67EB41236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304FEFFA921F755A53BA5CDA;
+			remoteInfo = "Pods-RUImageCaptureView_Tests-Expecta";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B4F65E6F278845EDF51BD0 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
+		019565E626D096E026F9F637 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		02E3AB2F7EF8B4B979B40A6E /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		02FAB56989C35ABC60DFFDE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03302223E76F57AF69E4A477 /* Pods-RUImageCaptureView_Tests-Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-Expecta-umbrella.h"; sourceTree = "<group>"; };
+		03A73879D8DD17E3C8FFB2CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		069269860137DFD5B9C229A8 /* Pods-RUImageCaptureView_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RUImageCaptureView_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
+		0748F7AE1D685D5E544D36B0 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-prefix.pch"; path = "../Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView-prefix.pch"; sourceTree = "<group>"; };
+		084EAD455DDBAF796E0E755C /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/UIImage+Diff.h"; sourceTree = "<group>"; };
+		08F0AFA9E628AF11A3725000 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5DCFAD0B6018F9222DAD9E /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		0BC223A8C7DA4E3AB1A9C96E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CEB49D9A1390C0F38A70D28 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots-umbrella.h"; sourceTree = "<group>"; };
+		0D8A750D86CF9636FE00B95C /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		0EFD59543C840FBAEEADABFD /* Pods-RUImageCaptureView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RUImageCaptureView_Example-dummy.m"; sourceTree = "<group>"; };
+		12E29F4D62E6ABDB9C3B2E79 /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
+		1324B911679EE606E2CE1B51 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		13D7769C32F61EBCF7CD2DA2 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D9587C4181E7FC70D39A90 /* Pods-RUImageCaptureView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RUImageCaptureView_Example.modulemap"; sourceTree = "<group>"; };
+		146F8C7930140EEA490BB119 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		171E6FFDA4632D4C895F3AF2 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		1A6B612B533AD8BB00D3AFF0 /* Expecta_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA93D845B4C15FBFB822396 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
+		1BE20BD18E725C44D097B44D /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		1CC220F0811C55B472A2673F /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		1CE497A691C251ADF458A3D1 /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE7A05604570CE6D9C288E8 /* RUImageCaptureView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RUImageCaptureView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AE309D5334C75A981A7A7A /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		22577E93D65B1016493557FB /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		227CE60D7198602E94BB5D36 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
+		22F6D1D722FE62ED2422A53F /* RUImageCaptureView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RUImageCaptureView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23AD6EFB5EEE0B4758ABA7E8 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		24FC1049C7ED3B44FECE3450 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		25A04C9AE069A4F36B272268 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		268407109935F86E5ADC885C /* Pods-RUImageCaptureView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RUImageCaptureView_Tests.modulemap"; sourceTree = "<group>"; };
+		27F812E94E56CE549F00745E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C0BA56CDAC36674C922FA4 /* AVCaptureDevice+RUCaptureDevices.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureDevice+RUCaptureDevices.m"; sourceTree = "<group>"; };
+		2A27B468C4BD798F4452ECFC /* Pods-RUImageCaptureView_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
+		2A34E2E699892E545B57C2CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-RUImageCaptureView_Tests-RUImageCaptureView/Info.plist"; sourceTree = "<group>"; };
+		2AFE8F6C2CFDC403B957B2B6 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		2CB335B51013776A02E03160 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2CB59FFA2D20D703389D5139 /* Pods-RUImageCaptureView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RUImageCaptureView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2E766EB5FAB55A65F109D117 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		2F5B9CCB0AD04E79ACF5C66D /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		31146E5240DAA4C829CB2E11 /* Pods-RUImageCaptureView_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RUImageCaptureView_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
+		35D0AC7AA9A97FAEC9B9B294 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots-Private.xcconfig"; sourceTree = "<group>"; };
+		36F0AB12207941B47047DCA1 /* Pods-RUImageCaptureView_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
+		37ED837663FB6357336BF815 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Example-RUImageCaptureView-umbrella.h"; sourceTree = "<group>"; };
+		3C5DA3C5B809D7A0FA960CAC /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		412C70C2BE7ADD1B52AE157B /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/UIImage+Compare.m"; sourceTree = "<group>"; };
+		424E24A1C3A7AC80729F525B /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		44599E33404002628C7BAA9F /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		4716D4039D87268AB9374D16 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49934C86E09E2D76DEBE17D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE3D8A25C7C6A8B052DC6D9 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots.xcconfig"; sourceTree = "<group>"; };
+		4C627BBD960CEB7006D10346 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		4C9B552F88799E09C6267A30 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
+		4D6B6CA9523285FAF88CD5DD /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/UIImage+Diff.m"; sourceTree = "<group>"; };
+		4FA72ED072AE95A97D73C8D1 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots-prefix.pch"; sourceTree = "<group>"; };
+		501B57ECA6509276085348AA /* Pods-RUImageCaptureView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		50A895689FBE6AF41BBF178E /* Pods_RUImageCaptureView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUImageCaptureView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		519625E7B3CC2220868CBCBC /* RUImageCaptureViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RUImageCaptureViewProtocols.h; sourceTree = "<group>"; };
+		51C34C959F4B523C07ECC95C /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-dummy.m"; path = "../Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView-dummy.m"; sourceTree = "<group>"; };
+		563C21BF939B82BBAB8DC47A /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		5679AD77F36842AD57F8188B /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
+		5829FDA27C6278139FDBCB5A /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		5AA3BEFB0CFEDB1221ED5EBC /* RUImageCaptureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RUImageCaptureView.h; sourceTree = "<group>"; };
+		5AC76A067FEBE4B6BB88B99F /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		5C4B6EE0757D6FDB9195AB50 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView.xcconfig"; path = "../Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView.xcconfig"; sourceTree = "<group>"; };
+		5CC0227976E55BA23A3AA834 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		5DAA789A366D5AEA5560EA4D /* Pods-RUImageCaptureView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RUImageCaptureView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E4E4EFCF9587F0397EF14B9 /* Pods-RUImageCaptureView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5E6FA09C2EF05701DE2B7CCB /* Pods-RUImageCaptureView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RUImageCaptureView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5EBDDECE5C7572E72FC28697 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		611F8B213A1F70D76B2871F2 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
+		612F863F6066E0CEF65E0CC4 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
+		6160EC8684E813F2648964AC /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-umbrella.h"; path = "../Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView-umbrella.h"; sourceTree = "<group>"; };
+		617CB77040EF29BE7CEA018A /* EXPMatchers+FBSnapshotTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+FBSnapshotTest.m"; sourceTree = "<group>"; };
+		61BD335B44F36705A6583BC7 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Example-RUImageCaptureView-Private.xcconfig"; sourceTree = "<group>"; };
+		62C0CFF81F9BE524B3BF7C5B /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
+		64B14F734864C643282C4951 /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		66532F84BD8EBC3C5D7AB2EF /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
+		682509146A5A557A2199F355 /* Pods-RUImageCaptureView_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
+		69B22DDC76CADC5EF83AFA7B /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots.modulemap"; sourceTree = "<group>"; };
+		69C877278B5740C502217AC7 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		69F26A4ABD26573E25077DD3 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		6B1EE8F568269BA3FCF68239 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		6B3D588459205CE9196191FD /* Pods-RUImageCaptureView_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Example-environment.h"; sourceTree = "<group>"; };
+		6CB9A88D779164084C953E50 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		6F31121F57E3EE162DFE078B /* Pods-RUImageCaptureView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RUImageCaptureView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FDBA37FA01A7E00A58D50E2 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		729C5CE774F1F85C6DAF68F3 /* Pods-RUImageCaptureView_Tests-Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RUImageCaptureView_Tests-Specta.modulemap"; sourceTree = "<group>"; };
+		738510DCBF849C867A8E510F /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots-dummy.m"; sourceTree = "<group>"; };
+		75B37BF6DD569E71F1635F5A /* Pods-RUImageCaptureView_Example-RUImageCaptureView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RUImageCaptureView_Example-RUImageCaptureView-dummy.m"; sourceTree = "<group>"; };
+		76D46E73398EFF79ADF70006 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		7A08A2D30FEB5BDBE1D7D41F /* Pods-RUImageCaptureView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RUImageCaptureView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7C38FC8CB97BA087189669C8 /* Pods-RUImageCaptureView_Tests-Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-Specta-umbrella.h"; sourceTree = "<group>"; };
+		7C7BF2EC4A2E614B9CE27C3C /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		7E0545AFCE11EA226E4F82EA /* Pods-RUImageCaptureView_Example-RUImageCaptureView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Example-RUImageCaptureView-prefix.pch"; sourceTree = "<group>"; };
+		7EF3CBD6EC80C00DE4C11770 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		7F0C84F29661CF4B45A260BD /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/UIImage+Compare.h"; sourceTree = "<group>"; };
+		7F24C6B969D606C539A85912 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		7FFA23C742BBDAAE637EF727 /* RUImageCaptureView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RUImageCaptureView.m; sourceTree = "<group>"; };
+		827129DE276FF73220472CAD /* Pods_RUImageCaptureView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUImageCaptureView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834B76E62C9ED6E65A8B3D0A /* Pods-RUImageCaptureView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RUImageCaptureView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		83F009FE8C2226FDA5B12F95 /* AVCaptureOutput+RUGetAVCaptureConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVCaptureOutput+RUGetAVCaptureConnection.h"; sourceTree = "<group>"; };
+		8564EB62E99BE8E198108D27 /* Pods-RUImageCaptureView_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-environment.h"; sourceTree = "<group>"; };
+		856BAE1838A85929E132522A /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		867A84B1007D1373DBC75E4D /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		87CCD618A44C21624985FD8D /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
+		8CEDCDE7659CA0C2E1075082 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		8D0901750E8025138E2F926E /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		8EB11015C4008D83E7C96C74 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		8EB738B1D6CE468A6FAB36ED /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		94952AA1C32412B9226FC3A5 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		96D9B665DFE90819E3B3928E /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+		9760CE173AB72FF601DF83A4 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView.modulemap"; path = "../Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView.modulemap"; sourceTree = "<group>"; };
+		9AB75AE432EB85A7457E0467 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
+		9B6549DCE9A2C89EF89C77ED /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		9C0DECB894AA1A7CE8A96E8D /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		A0780495F7686F422BCF6A1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0BEA382026C82353E5F9FF7 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		A1446789E22BAA493D1767A8 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		A1690E4F056BE4D797D03F3D /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		A55669E17503FB661C0E3C00 /* RUImageCaptureView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RUImageCaptureView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5705633D9586D3F86769036 /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
+		A7BA7281278260837B6228C5 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		A8B0300FFE03D105F3FEEAB2 /* Pods-RUImageCaptureView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Example-umbrella.h"; sourceTree = "<group>"; };
+		AAF5EC6F6373DF199F329511 /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		ABD4AE3D07C1553A5A6A60A7 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		B08EA53EB70A274F36F2938F /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		B1082F8868FAABA0B90DFBD2 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		B23C75316E33E8A78217F6F8 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		B35A44632CA2A8A8664A2D9E /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		B4FE2FD223BACA800C9EBF7B /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		B5AA56562A04A67319566D99 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		B6213524B0DE3A3D6A570C43 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		B69BD2BAD8EA402905EFCEB7 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		B757F550569A29F3727CE12A /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		B8BAD5333D15F590F3FF1E62 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		BA44BADEE9AFE9B1342601E5 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
+		BAA48EBD8B9C7CD0437EBD9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC51E6396C93151B80F3172E /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		BD5A9223340CEFAED5B43ACE /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
+		BEACE64B0A48281EC2A863E4 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF712E604172B0FEC52EF2F9 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
+		BFDCC0BD4CF1BF4CF0395719 /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
+		C06D2AFF12F484FFB60C1FD6 /* Pods-RUImageCaptureView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RUImageCaptureView_Tests-dummy.m"; sourceTree = "<group>"; };
+		C358DD975ECBC31293C531C6 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		C55F5AF367AD85A670B963FE /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		C8BE3DC9F15C10E8B8805012 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		CA0ED6B9306BD1701D604CC9 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		CBD971693AC6198728F23349 /* AVCaptureOutput+RUGetAVCaptureConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureOutput+RUGetAVCaptureConnection.m"; sourceTree = "<group>"; };
+		CC0B8244113D01DADD50D769 /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
+		CD514FE5A341C0B1FA6DDE3C /* Pods-RUImageCaptureView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CE5E676F405AA9D3D1DC8CE0 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		CE825C519C2AF179D1F9FD64 /* AVCaptureDevice+RUCaptureDevices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVCaptureDevice+RUCaptureDevices.h"; sourceTree = "<group>"; };
+		CF307A76B86502A56EBE1DAC /* Pods-RUImageCaptureView_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
+		D5F8D437E4E079DEF80DFBA0 /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		D601249A4CB968FA3E79E37B /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		D6163A7E1195B300C2F8DD5F /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		D7BB0DA5F735623545F41C67 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		D8BAF7B2CBA297B7269237B5 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		DB4B13533EE1D0FA9FF16485 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE3A8E47DDFABC0BCD1B7BE /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
+		DD7444B9C17A2EE8EAA1A814 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		DDF70200E3F38B22AD65D0B2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		DE50AE3320D87F8917484949 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		E109C21BD790E36D70995DEB /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		E38BD994EAF8D2C7564A8748 /* Pods-RUImageCaptureView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RUImageCaptureView_Example-resources.sh"; sourceTree = "<group>"; };
+		E405016447FF7800CA1C6E2D /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		E41A231C3CDE1624E0357A72 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		E48C3B661D85A2A21D2982E3 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		E61AE2899F3743D11FB50D53 /* RUImageCaptureView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RUImageCaptureView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6875CC26A3F8B601B678AA7 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		E87988FBAEFF70FB41CB051C /* Pods-RUImageCaptureView_Tests-Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RUImageCaptureView_Tests-Expecta.modulemap"; sourceTree = "<group>"; };
+		E91B13399362D2A7423ECC98 /* Pods-RUImageCaptureView_Example-RUImageCaptureView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Example-RUImageCaptureView.xcconfig"; sourceTree = "<group>"; };
+		EA8F760B8AAF11BB34961CA1 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		EBD3D76490CC33D965D51053 /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		ED19FD958A415F0BB2D0CB6F /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
+		EDB2F6B5E6254F203EC6B1C3 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.xcconfig"; sourceTree = "<group>"; };
+		EFDC54CDA70A7BCD401B474C /* Pods-RUImageCaptureView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RUImageCaptureView_Tests-resources.sh"; sourceTree = "<group>"; };
+		F0538C84D23108EC607363AA /* Pods-RUImageCaptureView_Example-RUImageCaptureView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RUImageCaptureView_Example-RUImageCaptureView.modulemap"; sourceTree = "<group>"; };
+		F0595501C658BE9440F34DDD /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		F4ECA04E677EA2076095088A /* Pods-RUImageCaptureView_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RUImageCaptureView_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
+		F6112F78B8464BF04C0C1549 /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
+		F7919AD0B551FEE135FDA022 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig"; path = "../Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig"; sourceTree = "<group>"; };
+		F840B034CEBDBB1CA291369B /* Pods-RUImageCaptureView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F945A8001B893335BEECA1C6 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.modulemap"; sourceTree = "<group>"; };
+		F955F8DB0A9508E0AB5689AC /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		FA11C3000271AB668248808F /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		FAD9D7DF985775CE8AD740DF /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		FADE75C0CEAF7130369104DD /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		FC7BFCCAFF4C6A8B7BD71E54 /* Pods-RUImageCaptureView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FD6B9D9A2113CA24DE97CB7B /* Pods-RUImageCaptureView_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RUImageCaptureView_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
+		FDF7AFFBD6C0576769225368 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F60A95785C974D972C794EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53E130FEFD54B9EEFCCF867 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E6D4516C763003D5ABF332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F0908C96425922D4F1CB04 /* Foundation.framework in Frameworks */,
+				E52C4A16B3022A44D7182375 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617085A1E48245537C991C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840D5CAA11D94101AF274456 /* Foundation.framework in Frameworks */,
+				F4A7FAEE744A90184E880C61 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742E2DA3091652F05885E920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F0E28116752F64519E7B0F /* Expecta.framework in Frameworks */,
+				664A38D49E6252B11BF1651F /* FBSnapshotTestCase.framework in Frameworks */,
+				60F992554370F84DA4936278 /* Foundation.framework in Frameworks */,
+				1841957BBBE96D5CBC96C4CD /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94802A96C52EBA951883977B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E7719FF082CE8D3CD0672B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D528A9A9B714ACBFDD9C82E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8352ECEED3F3B983B5A02C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B730F37501FC4588CDF40DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B41870EE1EE3A93B576222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97DC1CB99E18F11524DE3393 /* Foundation.framework in Frameworks */,
+				79452AA9B9A8ADA58AA16DD6 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB915CF5ACEF015E2E1723C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF75D8D6CA80694FE80D741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004E66E0A99CE3D5859D446B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		245F643EDD820EE07074F77A = {
+			isa = PBXGroup;
+			children = (
+				BEACE64B0A48281EC2A863E4 /* Podfile */,
+				3A59751D2CBE7224D1B61986 /* Development Pods */,
+				C62B106257E8AB2BE2673D13 /* Frameworks */,
+				B53BC00A5CB2DA191C34E43F /* Pods */,
+				8BEE3ABD42F16215DC01D97D /* Products */,
+				50AABEE6DC92EC5908CA0E3C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		2ACE568A9913920CAB93B7F6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				400A473E8655F4E966328D30 /* Category */,
+				A505ACCD6F319DF39455289B /* UIView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3A59751D2CBE7224D1B61986 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5332984EB36B866F320A10D /* RUImageCaptureView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3EE4EA309A5307B51DC75C12 /* Pods-RUImageCaptureView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BAA48EBD8B9C7CD0437EBD9D /* Info.plist */,
+				268407109935F86E5ADC885C /* Pods-RUImageCaptureView_Tests.modulemap */,
+				834B76E62C9ED6E65A8B3D0A /* Pods-RUImageCaptureView_Tests-acknowledgements.markdown */,
+				6F31121F57E3EE162DFE078B /* Pods-RUImageCaptureView_Tests-acknowledgements.plist */,
+				C06D2AFF12F484FFB60C1FD6 /* Pods-RUImageCaptureView_Tests-dummy.m */,
+				8564EB62E99BE8E198108D27 /* Pods-RUImageCaptureView_Tests-environment.h */,
+				5E6FA09C2EF05701DE2B7CCB /* Pods-RUImageCaptureView_Tests-frameworks.sh */,
+				EFDC54CDA70A7BCD401B474C /* Pods-RUImageCaptureView_Tests-resources.sh */,
+				5E4E4EFCF9587F0397EF14B9 /* Pods-RUImageCaptureView_Tests-umbrella.h */,
+				501B57ECA6509276085348AA /* Pods-RUImageCaptureView_Tests.debug.xcconfig */,
+				F840B034CEBDBB1CA291369B /* Pods-RUImageCaptureView_Tests.release.xcconfig */,
+			);
+			name = "Pods-RUImageCaptureView_Tests";
+			path = "Target Support Files/Pods-RUImageCaptureView_Tests";
+			sourceTree = "<group>";
+		};
+		400A473E8655F4E966328D30 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE825C519C2AF179D1F9FD64 /* AVCaptureDevice+RUCaptureDevices.h */,
+				28C0BA56CDAC36674C922FA4 /* AVCaptureDevice+RUCaptureDevices.m */,
+				83F009FE8C2226FDA5B12F95 /* AVCaptureOutput+RUGetAVCaptureConnection.h */,
+				CBD971693AC6198728F23349 /* AVCaptureOutput+RUGetAVCaptureConnection.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		50AABEE6DC92EC5908CA0E3C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E888DD12BEDBDC0B86C319C1 /* Pods-RUImageCaptureView_Example */,
+				3EE4EA309A5307B51DC75C12 /* Pods-RUImageCaptureView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5FA9F38D2B5272717AEB8C1A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2CB335B51013776A02E03160 /* Foundation.framework */,
+				03A73879D8DD17E3C8FFB2CE /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6C20DB15D87C6266F741735B /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				DDF70200E3F38B22AD65D0B2 /* FBSnapshotTestCase.h */,
+				8EB738B1D6CE468A6FAB36ED /* FBSnapshotTestCase.m */,
+				8CEDCDE7659CA0C2E1075082 /* FBSnapshotTestCasePlatform.h */,
+				ABD4AE3D07C1553A5A6A60A7 /* FBSnapshotTestCasePlatform.m */,
+				7C7BF2EC4A2E614B9CE27C3C /* FBSnapshotTestController.h */,
+				B08EA53EB70A274F36F2938F /* FBSnapshotTestController.m */,
+				7F0C84F29661CF4B45A260BD /* UIImage+Compare.h */,
+				412C70C2BE7ADD1B52AE157B /* UIImage+Compare.m */,
+				084EAD455DDBAF796E0E755C /* UIImage+Diff.h */,
+				4D6B6CA9523285FAF88CD5DD /* UIImage+Diff.m */,
+				E6381A2DA5F72E2AD6F0F3D9 /* Support Files */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		876095AB35D6114B0B47ECCC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB4B13533EE1D0FA9FF16485 /* Info.plist */,
+				729C5CE774F1F85C6DAF68F3 /* Pods-RUImageCaptureView_Tests-Specta.modulemap */,
+				FD6B9D9A2113CA24DE97CB7B /* Pods-RUImageCaptureView_Tests-Specta.xcconfig */,
+				2A27B468C4BD798F4452ECFC /* Pods-RUImageCaptureView_Tests-Specta-Private.xcconfig */,
+				069269860137DFD5B9C229A8 /* Pods-RUImageCaptureView_Tests-Specta-dummy.m */,
+				36F0AB12207941B47047DCA1 /* Pods-RUImageCaptureView_Tests-Specta-prefix.pch */,
+				7C38FC8CB97BA087189669C8 /* Pods-RUImageCaptureView_Tests-Specta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RUImageCaptureView_Tests-Specta";
+			sourceTree = "<group>";
+		};
+		8BEE3ABD42F16215DC01D97D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4716D4039D87268AB9374D16 /* Expecta.framework */,
+				1A6B612B533AD8BB00D3AFF0 /* Expecta_Snapshots.framework */,
+				13D7769C32F61EBCF7CD2DA2 /* FBSnapshotTestCase.framework */,
+				827129DE276FF73220472CAD /* Pods_RUImageCaptureView_Example.framework */,
+				50A895689FBE6AF41BBF178E /* Pods_RUImageCaptureView_Tests.framework */,
+				E61AE2899F3743D11FB50D53 /* RUImageCaptureView.bundle */,
+				1CE7A05604570CE6D9C288E8 /* RUImageCaptureView.bundle */,
+				22F6D1D722FE62ED2422A53F /* RUImageCaptureView.framework */,
+				A55669E17503FB661C0E3C00 /* RUImageCaptureView.framework */,
+				1CE497A691C251ADF458A3D1 /* Specta.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3B460C0080626000A0E9275 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27F812E94E56CE549F00745E /* Info.plist */,
+				69B22DDC76CADC5EF83AFA7B /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots.modulemap */,
+				4BE3D8A25C7C6A8B052DC6D9 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots.xcconfig */,
+				35D0AC7AA9A97FAEC9B9B294 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-Private.xcconfig */,
+				738510DCBF849C867A8E510F /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-dummy.m */,
+				4FA72ED072AE95A97D73C8D1 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-prefix.pch */,
+				0CEB49D9A1390C0F38A70D28 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RUImageCaptureView_Tests-Expecta+Snapshots";
+			sourceTree = "<group>";
+		};
+		A505ACCD6F319DF39455289B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				5AA3BEFB0CFEDB1221ED5EBC /* RUImageCaptureView.h */,
+				7FFA23C742BBDAAE637EF727 /* RUImageCaptureView.m */,
+				519625E7B3CC2220868CBCBC /* RUImageCaptureViewProtocols.h */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B5332984EB36B866F320A10D /* RUImageCaptureView */ = {
+			isa = PBXGroup;
+			children = (
+				DAD5160999E933C07A441966 /* Pod */,
+				BD42A53C43957121F5BE52E9 /* Support Files */,
+			);
+			name = RUImageCaptureView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B53BC00A5CB2DA191C34E43F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF4F091891EDA9133227FE69 /* Expecta */,
+				E2491614F156BEBA6C1A449E /* Expecta+Snapshots */,
+				6C20DB15D87C6266F741735B /* FBSnapshotTestCase */,
+				D0A803C80D4C3F8E02B23C93 /* Specta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD42A53C43957121F5BE52E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02FAB56989C35ABC60DFFDE3 /* Info.plist */,
+				2A34E2E699892E545B57C2CB /* Info.plist */,
+				F0538C84D23108EC607363AA /* Pods-RUImageCaptureView_Example-RUImageCaptureView.modulemap */,
+				E91B13399362D2A7423ECC98 /* Pods-RUImageCaptureView_Example-RUImageCaptureView.xcconfig */,
+				61BD335B44F36705A6583BC7 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-Private.xcconfig */,
+				75B37BF6DD569E71F1635F5A /* Pods-RUImageCaptureView_Example-RUImageCaptureView-dummy.m */,
+				7E0545AFCE11EA226E4F82EA /* Pods-RUImageCaptureView_Example-RUImageCaptureView-prefix.pch */,
+				37ED837663FB6357336BF815 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-umbrella.h */,
+				9760CE173AB72FF601DF83A4 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView.modulemap */,
+				5C4B6EE0757D6FDB9195AB50 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView.xcconfig */,
+				F7919AD0B551FEE135FDA022 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig */,
+				51C34C959F4B523C07ECC95C /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-dummy.m */,
+				0748F7AE1D685D5E544D36B0 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-prefix.pch */,
+				6160EC8684E813F2648964AC /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-RUImageCaptureView_Example-RUImageCaptureView";
+			sourceTree = "<group>";
+		};
+		BF4F091891EDA9133227FE69 /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				94952AA1C32412B9226FC3A5 /* EXPBlockDefinedMatcher.h */,
+				E109C21BD790E36D70995DEB /* EXPBlockDefinedMatcher.m */,
+				E6875CC26A3F8B601B678AA7 /* EXPDefines.h */,
+				563C21BF939B82BBAB8DC47A /* EXPDoubleTuple.h */,
+				2AFE8F6C2CFDC403B957B2B6 /* EXPDoubleTuple.m */,
+				B6213524B0DE3A3D6A570C43 /* EXPExpect.h */,
+				C8BE3DC9F15C10E8B8805012 /* EXPExpect.m */,
+				96D9B665DFE90819E3B3928E /* EXPFloatTuple.h */,
+				5829FDA27C6278139FDBCB5A /* EXPFloatTuple.m */,
+				171E6FFDA4632D4C895F3AF2 /* EXPMatcher.h */,
+				9B6549DCE9A2C89EF89C77ED /* EXPMatcherHelpers.h */,
+				76D46E73398EFF79ADF70006 /* EXPMatcherHelpers.m */,
+				2F5B9CCB0AD04E79ACF5C66D /* EXPMatchers.h */,
+				D8BAF7B2CBA297B7269237B5 /* EXPMatchers+beCloseTo.h */,
+				2E766EB5FAB55A65F109D117 /* EXPMatchers+beCloseTo.m */,
+				A1446789E22BAA493D1767A8 /* EXPMatchers+beFalsy.h */,
+				FAD9D7DF985775CE8AD740DF /* EXPMatchers+beFalsy.m */,
+				4C627BBD960CEB7006D10346 /* EXPMatchers+beGreaterThan.h */,
+				C55F5AF367AD85A670B963FE /* EXPMatchers+beGreaterThan.m */,
+				DD7444B9C17A2EE8EAA1A814 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				D6163A7E1195B300C2F8DD5F /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				1CC220F0811C55B472A2673F /* EXPMatchers+beIdenticalTo.h */,
+				867A84B1007D1373DBC75E4D /* EXPMatchers+beIdenticalTo.m */,
+				22577E93D65B1016493557FB /* EXPMatchers+beInTheRangeOf.h */,
+				CA0ED6B9306BD1701D604CC9 /* EXPMatchers+beInTheRangeOf.m */,
+				CE5E676F405AA9D3D1DC8CE0 /* EXPMatchers+beInstanceOf.h */,
+				B757F550569A29F3727CE12A /* EXPMatchers+beInstanceOf.m */,
+				DE50AE3320D87F8917484949 /* EXPMatchers+beKindOf.h */,
+				3C5DA3C5B809D7A0FA960CAC /* EXPMatchers+beKindOf.m */,
+				FADE75C0CEAF7130369104DD /* EXPMatchers+beLessThan.h */,
+				0D8A750D86CF9636FE00B95C /* EXPMatchers+beLessThan.m */,
+				F955F8DB0A9508E0AB5689AC /* EXPMatchers+beLessThanOrEqualTo.h */,
+				5AC76A067FEBE4B6BB88B99F /* EXPMatchers+beLessThanOrEqualTo.m */,
+				7EF3CBD6EC80C00DE4C11770 /* EXPMatchers+beNil.h */,
+				B8BAD5333D15F590F3FF1E62 /* EXPMatchers+beNil.m */,
+				B5AA56562A04A67319566D99 /* EXPMatchers+beSubclassOf.h */,
+				FA11C3000271AB668248808F /* EXPMatchers+beSubclassOf.m */,
+				A1690E4F056BE4D797D03F3D /* EXPMatchers+beSupersetOf.h */,
+				C358DD975ECBC31293C531C6 /* EXPMatchers+beSupersetOf.m */,
+				FDF7AFFBD6C0576769225368 /* EXPMatchers+beTruthy.h */,
+				6B1EE8F568269BA3FCF68239 /* EXPMatchers+beTruthy.m */,
+				B4FE2FD223BACA800C9EBF7B /* EXPMatchers+beginWith.h */,
+				A7BA7281278260837B6228C5 /* EXPMatchers+beginWith.m */,
+				21AE309D5334C75A981A7A7A /* EXPMatchers+conformTo.h */,
+				146F8C7930140EEA490BB119 /* EXPMatchers+conformTo.m */,
+				1BE20BD18E725C44D097B44D /* EXPMatchers+contain.h */,
+				E48C3B661D85A2A21D2982E3 /* EXPMatchers+contain.m */,
+				BC51E6396C93151B80F3172E /* EXPMatchers+endWith.h */,
+				B69BD2BAD8EA402905EFCEB7 /* EXPMatchers+endWith.m */,
+				D601249A4CB968FA3E79E37B /* EXPMatchers+equal.h */,
+				24FC1049C7ED3B44FECE3450 /* EXPMatchers+equal.m */,
+				02E3AB2F7EF8B4B979B40A6E /* EXPMatchers+haveCountOf.h */,
+				EBD3D76490CC33D965D51053 /* EXPMatchers+haveCountOf.m */,
+				BF712E604172B0FEC52EF2F9 /* EXPMatchers+match.h */,
+				5679AD77F36842AD57F8188B /* EXPMatchers+match.m */,
+				AAF5EC6F6373DF199F329511 /* EXPMatchers+postNotification.h */,
+				F0595501C658BE9440F34DDD /* EXPMatchers+postNotification.m */,
+				E405016447FF7800CA1C6E2D /* EXPMatchers+raise.h */,
+				B23C75316E33E8A78217F6F8 /* EXPMatchers+raise.m */,
+				019565E626D096E026F9F637 /* EXPMatchers+raiseWithReason.h */,
+				8D0901750E8025138E2F926E /* EXPMatchers+raiseWithReason.m */,
+				9C0DECB894AA1A7CE8A96E8D /* EXPMatchers+respondTo.h */,
+				5CC0227976E55BA23A3AA834 /* EXPMatchers+respondTo.m */,
+				6FDBA37FA01A7E00A58D50E2 /* EXPUnsupportedObject.h */,
+				6CB9A88D779164084C953E50 /* EXPUnsupportedObject.m */,
+				A0BEA382026C82353E5F9FF7 /* Expecta.h */,
+				D7BB0DA5F735623545F41C67 /* ExpectaObject.h */,
+				5EBDDECE5C7572E72FC28697 /* ExpectaObject.m */,
+				69F26A4ABD26573E25077DD3 /* ExpectaSupport.h */,
+				64B14F734864C643282C4951 /* ExpectaSupport.m */,
+				E41A231C3CDE1624E0357A72 /* NSObject+Expecta.h */,
+				8EB11015C4008D83E7C96C74 /* NSValue+Expecta.h */,
+				B35A44632CA2A8A8664A2D9E /* NSValue+Expecta.m */,
+				DF63C9F7024AD0B8ED92C48D /* Support Files */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		C62B106257E8AB2BE2673D13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				856BAE1838A85929E132522A /* Expecta.framework */,
+				08F0AFA9E628AF11A3725000 /* FBSnapshotTestCase.framework */,
+				5FA9F38D2B5272717AEB8C1A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0A803C80D4C3F8E02B23C93 /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				227CE60D7198602E94BB5D36 /* SPTCallSite.h */,
+				ED19FD958A415F0BB2D0CB6F /* SPTCallSite.m */,
+				66532F84BD8EBC3C5D7AB2EF /* SPTCompiledExample.h */,
+				9AB75AE432EB85A7457E0467 /* SPTCompiledExample.m */,
+				62C0CFF81F9BE524B3BF7C5B /* SPTExample.h */,
+				B1082F8868FAABA0B90DFBD2 /* SPTExample.m */,
+				BFDCC0BD4CF1BF4CF0395719 /* SPTExampleGroup.h */,
+				DCE3A8E47DDFABC0BCD1B7BE /* SPTExampleGroup.m */,
+				0B5DCFAD0B6018F9222DAD9E /* SPTExcludeGlobalBeforeAfterEach.h */,
+				1324B911679EE606E2CE1B51 /* SPTGlobalBeforeAfterEach.h */,
+				424E24A1C3A7AC80729F525B /* SPTSharedExampleGroups.h */,
+				BA44BADEE9AFE9B1342601E5 /* SPTSharedExampleGroups.m */,
+				00B4F65E6F278845EDF51BD0 /* SPTSpec.h */,
+				D5F8D437E4E079DEF80DFBA0 /* SPTSpec.m */,
+				4C9B552F88799E09C6267A30 /* SPTTestSuite.h */,
+				F6112F78B8464BF04C0C1549 /* SPTTestSuite.m */,
+				87CCD618A44C21624985FD8D /* Specta.h */,
+				A5705633D9586D3F86769036 /* SpectaDSL.h */,
+				44599E33404002628C7BAA9F /* SpectaDSL.m */,
+				EA8F760B8AAF11BB34961CA1 /* SpectaTypes.h */,
+				12E29F4D62E6ABDB9C3B2E79 /* SpectaUtility.h */,
+				BD5A9223340CEFAED5B43ACE /* SpectaUtility.m */,
+				611F8B213A1F70D76B2871F2 /* XCTest+Private.h */,
+				23AD6EFB5EEE0B4758ABA7E8 /* XCTestCase+Specta.h */,
+				CC0B8244113D01DADD50D769 /* XCTestCase+Specta.m */,
+				876095AB35D6114B0B47ECCC /* Support Files */,
+			);
+			path = Specta;
+			sourceTree = "<group>";
+		};
+		DAD5160999E933C07A441966 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2ACE568A9913920CAB93B7F6 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DF63C9F7024AD0B8ED92C48D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0780495F7686F422BCF6A1D /* Info.plist */,
+				E87988FBAEFF70FB41CB051C /* Pods-RUImageCaptureView_Tests-Expecta.modulemap */,
+				682509146A5A557A2199F355 /* Pods-RUImageCaptureView_Tests-Expecta.xcconfig */,
+				CF307A76B86502A56EBE1DAC /* Pods-RUImageCaptureView_Tests-Expecta-Private.xcconfig */,
+				31146E5240DAA4C829CB2E11 /* Pods-RUImageCaptureView_Tests-Expecta-dummy.m */,
+				F4ECA04E677EA2076095088A /* Pods-RUImageCaptureView_Tests-Expecta-prefix.pch */,
+				03302223E76F57AF69E4A477 /* Pods-RUImageCaptureView_Tests-Expecta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RUImageCaptureView_Tests-Expecta";
+			sourceTree = "<group>";
+		};
+		E2491614F156BEBA6C1A449E /* Expecta+Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				1BA93D845B4C15FBFB822396 /* EXPMatchers+FBSnapshotTest.h */,
+				617CB77040EF29BE7CEA018A /* EXPMatchers+FBSnapshotTest.m */,
+				A3B460C0080626000A0E9275 /* Support Files */,
+			);
+			path = "Expecta+Snapshots";
+			sourceTree = "<group>";
+		};
+		E6381A2DA5F72E2AD6F0F3D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49934C86E09E2D76DEBE17D2 /* Info.plist */,
+				F945A8001B893335BEECA1C6 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.modulemap */,
+				EDB2F6B5E6254F203EC6B1C3 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.xcconfig */,
+				612F863F6066E0CEF65E0CC4 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-Private.xcconfig */,
+				69C877278B5740C502217AC7 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-dummy.m */,
+				25A04C9AE069A4F36B272268 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-prefix.pch */,
+				7F24C6B969D606C539A85912 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		E888DD12BEDBDC0B86C319C1 /* Pods-RUImageCaptureView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0BC223A8C7DA4E3AB1A9C96E /* Info.plist */,
+				13D9587C4181E7FC70D39A90 /* Pods-RUImageCaptureView_Example.modulemap */,
+				2CB59FFA2D20D703389D5139 /* Pods-RUImageCaptureView_Example-acknowledgements.markdown */,
+				5DAA789A366D5AEA5560EA4D /* Pods-RUImageCaptureView_Example-acknowledgements.plist */,
+				0EFD59543C840FBAEEADABFD /* Pods-RUImageCaptureView_Example-dummy.m */,
+				6B3D588459205CE9196191FD /* Pods-RUImageCaptureView_Example-environment.h */,
+				7A08A2D30FEB5BDBE1D7D41F /* Pods-RUImageCaptureView_Example-frameworks.sh */,
+				E38BD994EAF8D2C7564A8748 /* Pods-RUImageCaptureView_Example-resources.sh */,
+				A8B0300FFE03D105F3FEEAB2 /* Pods-RUImageCaptureView_Example-umbrella.h */,
+				CD514FE5A341C0B1FA6DDE3C /* Pods-RUImageCaptureView_Example.debug.xcconfig */,
+				FC7BFCCAFF4C6A8B7BD71E54 /* Pods-RUImageCaptureView_Example.release.xcconfig */,
+			);
+			name = "Pods-RUImageCaptureView_Example";
+			path = "Target Support Files/Pods-RUImageCaptureView_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		46AB1616B674C91197BFB93A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35193A871D5207DA133DC540 /* EXPMatchers+FBSnapshotTest.h in Headers */,
+				489B8548D0BF9E90E9E76EC0 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520B67DF2505F4683A0A91FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AA936AC199C3028B8E56C1 /* AVCaptureDevice+RUCaptureDevices.h in Headers */,
+				BC4DDE4177CA4A408683DBFE /* AVCaptureOutput+RUGetAVCaptureConnection.h in Headers */,
+				7A70D1734CF5249C0B1D64DC /* Pods-RUImageCaptureView_Example-RUImageCaptureView-umbrella.h in Headers */,
+				A447DFD5DA7CB93532FA658D /* RUImageCaptureView.h in Headers */,
+				DFEE3565353106BB76EAC07D /* RUImageCaptureViewProtocols.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56499798B42E80C9AC2E4783 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D539BCE367D3A52D914FC9D8 /* EXPBlockDefinedMatcher.h in Headers */,
+				044610120B9949566667200A /* EXPDefines.h in Headers */,
+				EE10B8238EED78A94F68C1FB /* EXPDoubleTuple.h in Headers */,
+				6D7E3AF5D80CC07AFAA08CB3 /* EXPExpect.h in Headers */,
+				F87D837EFEEDA92F3E382527 /* EXPFloatTuple.h in Headers */,
+				6CD9D805C04B3BED94FECD3C /* EXPMatcher.h in Headers */,
+				E9F6817B32272A94508415CE /* EXPMatcherHelpers.h in Headers */,
+				722E96B800F9AF0CA40ABC87 /* EXPMatchers+beCloseTo.h in Headers */,
+				BB439865EDC4FFC4E29E87B9 /* EXPMatchers+beFalsy.h in Headers */,
+				E9928CB757406A46111674B9 /* EXPMatchers+beGreaterThan.h in Headers */,
+				E28D2FD2D5204135921F3B30 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				461F89054ABAFFDF8A08DA1A /* EXPMatchers+beIdenticalTo.h in Headers */,
+				89FEB4811033E1B970EE2042 /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				CC8E0A8C2EBFE125E222F033 /* EXPMatchers+beInstanceOf.h in Headers */,
+				947839CA44DF067A2E58681F /* EXPMatchers+beKindOf.h in Headers */,
+				90E318BFA30E266CF6904128 /* EXPMatchers+beLessThan.h in Headers */,
+				DD4C0658E370F5A8D67D5ADE /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				5A6EA36F83718A323D7C97B5 /* EXPMatchers+beNil.h in Headers */,
+				05F3E3110FDB07612CE84C44 /* EXPMatchers+beSubclassOf.h in Headers */,
+				57B0D4CF45F95C88A4656ECE /* EXPMatchers+beSupersetOf.h in Headers */,
+				13993319E18AE03E26ABF89F /* EXPMatchers+beTruthy.h in Headers */,
+				1240512751C0B2AA6FFC61C3 /* EXPMatchers+beginWith.h in Headers */,
+				BF6E7231398E8CA3C4D035E6 /* EXPMatchers+conformTo.h in Headers */,
+				2CFF8DCF3A6C55FA8F49714D /* EXPMatchers+contain.h in Headers */,
+				317329FE4C4F8E166EE7F1F9 /* EXPMatchers+endWith.h in Headers */,
+				9D92A9EA3F14E06D571F5D48 /* EXPMatchers+equal.h in Headers */,
+				C6747A85180DABE57CBCDD1E /* EXPMatchers+haveCountOf.h in Headers */,
+				F74E72B8F142CEBBDA45F369 /* EXPMatchers+match.h in Headers */,
+				EA8D165AD756CF34DD2266F7 /* EXPMatchers+postNotification.h in Headers */,
+				9E7C894070E5990847207C65 /* EXPMatchers+raise.h in Headers */,
+				70D12219B0072743973386F6 /* EXPMatchers+raiseWithReason.h in Headers */,
+				92ECCAC955862D1B9D205C50 /* EXPMatchers+respondTo.h in Headers */,
+				D3ACBFF8089D67B83CC17CFE /* EXPMatchers.h in Headers */,
+				E2E1910736015D53AEC5D41B /* EXPUnsupportedObject.h in Headers */,
+				50A4F59029B4AA9A846B4922 /* Expecta.h in Headers */,
+				0DA6D55A3119EC5F832B2302 /* ExpectaObject.h in Headers */,
+				32924EC2EF08D99EB2E70C33 /* ExpectaSupport.h in Headers */,
+				3F81002F2FAACD950820AEC4 /* NSObject+Expecta.h in Headers */,
+				87F0DEAF6003251397CFEA38 /* NSValue+Expecta.h in Headers */,
+				5BBCA9C796C8A70479B312CF /* Pods-RUImageCaptureView_Tests-Expecta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6121CE8AF0781D6FA99A9CA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766DE0248C345A11FC7A63F /* FBSnapshotTestCase.h in Headers */,
+				91D215AF759D208390E5D3F3 /* FBSnapshotTestCasePlatform.h in Headers */,
+				8EC5DE5D668A4A80647B8BC6 /* FBSnapshotTestController.h in Headers */,
+				CCDD71CA3E036BFFEE20F2A4 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-umbrella.h in Headers */,
+				B32507BDFE14A74D195EEE57 /* UIImage+Compare.h in Headers */,
+				011FEFCC096FFFED9E191C88 /* UIImage+Diff.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F36BA1748FF57635040ABD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA03B1400DA17A252189B429 /* Pods-RUImageCaptureView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB52FC09612E8D10E44D40B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606CED4C756AB0F75308689C /* Pods-RUImageCaptureView_Tests-Specta-umbrella.h in Headers */,
+				EBA7A94210FD99CD3D354FE2 /* SPTCallSite.h in Headers */,
+				C24B0388458ECBF041AC8B07 /* SPTCompiledExample.h in Headers */,
+				5524E775BA7583D8A2D562C9 /* SPTExample.h in Headers */,
+				D7FDE36A439020EC9C8BBB44 /* SPTExampleGroup.h in Headers */,
+				0C0B8F2E78C7EA5C7DFC59A2 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
+				7CB20C793C967901084A3486 /* SPTGlobalBeforeAfterEach.h in Headers */,
+				C3BCA3F2CF3C8464EA109BDB /* SPTSharedExampleGroups.h in Headers */,
+				02F6EF7A621382B0728B06D0 /* SPTSpec.h in Headers */,
+				9D7AB299184F0483A97B10A0 /* SPTTestSuite.h in Headers */,
+				E2A33E6CCDA7FA84E5477574 /* Specta.h in Headers */,
+				577F5346467F39F654DF089E /* SpectaDSL.h in Headers */,
+				4F0DD8E8ECECE62E6E58AD70 /* SpectaTypes.h in Headers */,
+				3A49CF32FA9307292D7D811B /* SpectaUtility.h in Headers */,
+				6B4DF36FADBD84E136766699 /* XCTest+Private.h in Headers */,
+				3A46500410BE08B7FB5BF517 /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AC8F9DE91D8D2FC080FE18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC9BB7205071D158790B7F8 /* AVCaptureDevice+RUCaptureDevices.h in Headers */,
+				3AE916BB1EFA15056F33E546 /* AVCaptureOutput+RUGetAVCaptureConnection.h in Headers */,
+				C6A3F05C0C3C78F678122579 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-umbrella.h in Headers */,
+				E18FD2859FEE539DAB3A5207 /* RUImageCaptureView.h in Headers */,
+				22A7CF71E4FB9128DB3C4180 /* RUImageCaptureViewProtocols.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE096F3B6E01E75681F0B782 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C155709D509EE1D9182E7CEC /* Pods-RUImageCaptureView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		304FEFFA921F755A53BA5CDA /* Pods-RUImageCaptureView_Tests-Expecta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93D721886C44A98FF0CF6A0 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-Expecta" */;
+			buildPhases = (
+				DA15EF1C2ABFDC0E8CB2851B /* Sources */,
+				46E6D4516C763003D5ABF332 /* Frameworks */,
+				56499798B42E80C9AC2E4783 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RUImageCaptureView_Tests-Expecta";
+			productName = "Pods-RUImageCaptureView_Tests-Expecta";
+			productReference = 4716D4039D87268AB9374D16 /* Expecta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F65DFAC0EB2739A51051DCC /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E2C770463FE7BD7E629212D /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView" */;
+			buildPhases = (
+				92F3B1DA53F8312FC6D3F9B4 /* Sources */,
+				FBB915CF5ACEF015E2E1723C /* Frameworks */,
+				3289F3CD0032FC920F1E6247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView";
+			productName = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView";
+			productReference = E61AE2899F3743D11FB50D53 /* RUImageCaptureView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		80A5F06F373D90797FC37D4B /* Pods-RUImageCaptureView_Tests-RUImageCaptureView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B1D81732349E8C06527751B /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-RUImageCaptureView" */;
+			buildPhases = (
+				0971C8DA9C6B57769BD84B49 /* Sources */,
+				FCF75D8D6CA80694FE80D741 /* Frameworks */,
+				55BE23AEAC3C7E6E7F0C237D /* Resources */,
+				D3AC8F9DE91D8D2FC080FE18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC92693FC346CFBF0663DD1C /* PBXTargetDependency */,
+			);
+			name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView";
+			productName = "Pods-RUImageCaptureView_Tests-RUImageCaptureView";
+			productReference = 22F6D1D722FE62ED2422A53F /* RUImageCaptureView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8358EE35BA950EE7AB3AA880 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36D693726676E7BA4E17A710 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView" */;
+			buildPhases = (
+				F8AE801CC6BFAED4E368A296 /* Sources */,
+				94802A96C52EBA951883977B /* Frameworks */,
+				01FB462DAD9A3A275D5EE2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView";
+			productName = "Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView";
+			productReference = 1CE7A05604570CE6D9C288E8 /* RUImageCaptureView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8CAD5F8B4368965E7AE8BC83 /* Pods-RUImageCaptureView_Tests-Specta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A9602D0BDBC36A477F491E5 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-Specta" */;
+			buildPhases = (
+				E99F7DA1A55CE192F47E4287 /* Sources */,
+				F0B41870EE1EE3A93B576222 /* Frameworks */,
+				AAB52FC09612E8D10E44D40B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RUImageCaptureView_Tests-Specta";
+			productName = "Pods-RUImageCaptureView_Tests-Specta";
+			productReference = 1CE497A691C251ADF458A3D1 /* Specta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DC3DE5EA32F40F7E05239A2 /* Pods-RUImageCaptureView_Example-RUImageCaptureView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F848C6F82B98FDCB95AE3CC4 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Example-RUImageCaptureView" */;
+			buildPhases = (
+				BA703C062EF5773C9557C61A /* Sources */,
+				9E7719FF082CE8D3CD0672B8 /* Frameworks */,
+				1E7A7533EBEA9AC9C1A770F9 /* Resources */,
+				520B67DF2505F4683A0A91FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				431DBCB9E033F068FB0A5CC3 /* PBXTargetDependency */,
+			);
+			name = "Pods-RUImageCaptureView_Example-RUImageCaptureView";
+			productName = "Pods-RUImageCaptureView_Example-RUImageCaptureView";
+			productReference = A55669E17503FB661C0E3C00 /* RUImageCaptureView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A16C0D89CC1B408C68B7982D /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E0C8978A684FAC8816CE56C /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase" */;
+			buildPhases = (
+				96E2A37A9E9DAAD50E48EBA6 /* Sources */,
+				617085A1E48245537C991C6C /* Frameworks */,
+				6121CE8AF0781D6FA99A9CA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase";
+			productName = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase";
+			productReference = 13D7769C32F61EBCF7CD2DA2 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B84A45B5C2F2506C85D7513E /* Pods-RUImageCaptureView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D53220B1B5A3AC1B8FB460 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Example" */;
+			buildPhases = (
+				2A60EE3ABE08798A9448AFDD /* Sources */,
+				A8352ECEED3F3B983B5A02C0 /* Frameworks */,
+				6F36BA1748FF57635040ABD7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B63F5612EA764098CE90B051 /* PBXTargetDependency */,
+			);
+			name = "Pods-RUImageCaptureView_Example";
+			productName = "Pods-RUImageCaptureView_Example";
+			productReference = 827129DE276FF73220472CAD /* Pods_RUImageCaptureView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBBFFE734430EA4F09CA663F /* Pods-RUImageCaptureView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E022794B8CBA94F7F681DF8 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests" */;
+			buildPhases = (
+				B7218116039A3F8D265FFE2E /* Sources */,
+				0F60A95785C974D972C794EF /* Frameworks */,
+				EE096F3B6E01E75681F0B782 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8368401639C3E2023E818878 /* PBXTargetDependency */,
+				255B6D74082F09932E32E954 /* PBXTargetDependency */,
+				73D5E63580EA0A9F2CF41A32 /* PBXTargetDependency */,
+				AEC5522FC7099019819DDF44 /* PBXTargetDependency */,
+				80164529698E3000D86B34AE /* PBXTargetDependency */,
+			);
+			name = "Pods-RUImageCaptureView_Tests";
+			productName = "Pods-RUImageCaptureView_Tests";
+			productReference = 50A895689FBE6AF41BBF178E /* Pods_RUImageCaptureView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E14BAEB75330947E82B923AE /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 552C3A2A53AA2AE44496749E /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-Expecta+Snapshots" */;
+			buildPhases = (
+				54AF60CC64E852C972CD1599 /* Sources */,
+				742E2DA3091652F05885E920 /* Frameworks */,
+				46AB1616B674C91197BFB93A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63FC842DF93317B0E5BD95D3 /* PBXTargetDependency */,
+				1A2B24A823AB7FDA804C1C20 /* PBXTargetDependency */,
+			);
+			name = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots";
+			productName = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots";
+			productReference = 1A6B612B533AD8BB00D3AFF0 /* Expecta_Snapshots.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		321AFB1E8DF0123DF0767FE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = CAEB29B8E3CC174A998AB6AD /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 245F643EDD820EE07074F77A;
+			productRefGroup = 8BEE3ABD42F16215DC01D97D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B84A45B5C2F2506C85D7513E /* Pods-RUImageCaptureView_Example */,
+				9DC3DE5EA32F40F7E05239A2 /* Pods-RUImageCaptureView_Example-RUImageCaptureView */,
+				8358EE35BA950EE7AB3AA880 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView */,
+				DBBFFE734430EA4F09CA663F /* Pods-RUImageCaptureView_Tests */,
+				304FEFFA921F755A53BA5CDA /* Pods-RUImageCaptureView_Tests-Expecta */,
+				E14BAEB75330947E82B923AE /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots */,
+				A16C0D89CC1B408C68B7982D /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase */,
+				80A5F06F373D90797FC37D4B /* Pods-RUImageCaptureView_Tests-RUImageCaptureView */,
+				6F65DFAC0EB2739A51051DCC /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView */,
+				8CAD5F8B4368965E7AE8BC83 /* Pods-RUImageCaptureView_Tests-Specta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01FB462DAD9A3A275D5EE2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E7A7533EBEA9AC9C1A770F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AE19A4D75D0CC01E333C71 /* RUImageCaptureView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3289F3CD0032FC920F1E6247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BE23AEAC3C7E6E7F0C237D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C636959C89A6879D215EEAA4 /* RUImageCaptureView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0971C8DA9C6B57769BD84B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C959D46F2611B5848012CE0C /* AVCaptureDevice+RUCaptureDevices.m in Sources */,
+				9CDF7B699FD6990C79095B44 /* AVCaptureOutput+RUGetAVCaptureConnection.m in Sources */,
+				2211D00E42A3FFBA93436E20 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-dummy.m in Sources */,
+				F986E86A0AF5384359488C38 /* RUImageCaptureView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A60EE3ABE08798A9448AFDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3C9EC91E61058CA346AFFD /* Pods-RUImageCaptureView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AF60CC64E852C972CD1599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3780B4BDF410D79B55C4FE /* EXPMatchers+FBSnapshotTest.m in Sources */,
+				9D9C3B69189C60D508969326 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F3B1DA53F8312FC6D3F9B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E2A37A9E9DAAD50E48EBA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D336954DFAE1D00C99C62C2 /* FBSnapshotTestCase.m in Sources */,
+				B3B58B95C25F245FBBE69C09 /* FBSnapshotTestCasePlatform.m in Sources */,
+				56B563043CCE4217F62DE7AF /* FBSnapshotTestController.m in Sources */,
+				8EB6C643CCA395B4681A9193 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-dummy.m in Sources */,
+				2B457E331DAC65639B000FA9 /* UIImage+Compare.m in Sources */,
+				B240446379BCAF0A0C0CB46C /* UIImage+Diff.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7218116039A3F8D265FFE2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9482FA5F325D885FBC990EF8 /* Pods-RUImageCaptureView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA703C062EF5773C9557C61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78773600953C53CCF7AEBBB3 /* AVCaptureDevice+RUCaptureDevices.m in Sources */,
+				B4CE66BCE0EFBB62898FCB43 /* AVCaptureOutput+RUGetAVCaptureConnection.m in Sources */,
+				FB7A809D3729EE6BD49F4B92 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-dummy.m in Sources */,
+				34D581FCFEB34603D6E36589 /* RUImageCaptureView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA15EF1C2ABFDC0E8CB2851B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008091E8AD4E96671356DD2B /* EXPBlockDefinedMatcher.m in Sources */,
+				F5E50C2CEB21359068E5786A /* EXPDoubleTuple.m in Sources */,
+				D082E867E3679B14821392F1 /* EXPExpect.m in Sources */,
+				CFA979E25D07222B5361C8A0 /* EXPFloatTuple.m in Sources */,
+				00D2341131EA013CD65299CF /* EXPMatcherHelpers.m in Sources */,
+				2A5509E94A075852B0A6E280 /* EXPMatchers+beCloseTo.m in Sources */,
+				9EAB323D7E8B85BB8682A6BB /* EXPMatchers+beFalsy.m in Sources */,
+				53D28073612872081AB7C0B1 /* EXPMatchers+beGreaterThan.m in Sources */,
+				9838A60D8EF01E5EC33801D3 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				6E829C3B963B978827595304 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				2A1A260835F016DA362BC3CA /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				3ABA7349FB0DCC7030E978A2 /* EXPMatchers+beInstanceOf.m in Sources */,
+				0AFD544EBCFEF841B1822B8D /* EXPMatchers+beKindOf.m in Sources */,
+				D748679F4A637642269C65C0 /* EXPMatchers+beLessThan.m in Sources */,
+				02400126A0F3E378FA1C60DC /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				4C566E63A65F0EEC3767C584 /* EXPMatchers+beNil.m in Sources */,
+				578E331FF52CCB391EC67105 /* EXPMatchers+beSubclassOf.m in Sources */,
+				06DBD42EC1C185F32D09FD29 /* EXPMatchers+beSupersetOf.m in Sources */,
+				0749B0D996627965F2136DA6 /* EXPMatchers+beTruthy.m in Sources */,
+				96492ED8E0435E0E679AD015 /* EXPMatchers+beginWith.m in Sources */,
+				6888E7A11308C42B2DD82409 /* EXPMatchers+conformTo.m in Sources */,
+				6BD50EDB3AFD2ED9AD946114 /* EXPMatchers+contain.m in Sources */,
+				A227A4ACB6E55E802A5B96D2 /* EXPMatchers+endWith.m in Sources */,
+				303F2976ACB8FC82363E8971 /* EXPMatchers+equal.m in Sources */,
+				9EF3315E0AC9A351F8EF2154 /* EXPMatchers+haveCountOf.m in Sources */,
+				853CF90151D78BDE1A0FBA99 /* EXPMatchers+match.m in Sources */,
+				043C707B8568737C0E73D17C /* EXPMatchers+postNotification.m in Sources */,
+				6E24F0BD612031EC8B6A15EB /* EXPMatchers+raise.m in Sources */,
+				8D76C00C0CCBDA8BE5616253 /* EXPMatchers+raiseWithReason.m in Sources */,
+				09321D54B35BEF2E09C7B8D3 /* EXPMatchers+respondTo.m in Sources */,
+				015D0B50D7927B31B3741913 /* EXPUnsupportedObject.m in Sources */,
+				6A76B23FB572FAF6EEB8EDD2 /* ExpectaObject.m in Sources */,
+				A67DB4B2EFA369C4AF83A937 /* ExpectaSupport.m in Sources */,
+				3B0FF4A277ED9259D24625AB /* NSValue+Expecta.m in Sources */,
+				522BAA81B4AE758B6EEB83F0 /* Pods-RUImageCaptureView_Tests-Expecta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F7DA1A55CE192F47E4287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812FFD9BE03BBDA62D031AA3 /* Pods-RUImageCaptureView_Tests-Specta-dummy.m in Sources */,
+				79D1FF34C5C211620962D3A3 /* SPTCallSite.m in Sources */,
+				258AB50A5294BA6E1DC8358C /* SPTCompiledExample.m in Sources */,
+				3495C9620B21EED0976DB6FF /* SPTExample.m in Sources */,
+				DE680F3AC4CD3D4610CDEA7A /* SPTExampleGroup.m in Sources */,
+				C1C1E0223512F414BADC774B /* SPTSharedExampleGroups.m in Sources */,
+				30870ADF10FC13AE7731F2D1 /* SPTSpec.m in Sources */,
+				1DC69B47F23064D3D7FE5F56 /* SPTTestSuite.m in Sources */,
+				5535F9B11EEDE72E6E286174 /* SpectaDSL.m in Sources */,
+				DAE91D23512D8152390953E1 /* SpectaUtility.m in Sources */,
+				9F5D117E4918C4037C291215 /* XCTestCase+Specta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AE801CC6BFAED4E368A296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A2B24A823AB7FDA804C1C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase";
+			target = A16C0D89CC1B408C68B7982D /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase */;
+			targetProxy = B6D56960CED298ECA9B59119 /* PBXContainerItemProxy */;
+		};
+		255B6D74082F09932E32E954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-Expecta+Snapshots";
+			target = E14BAEB75330947E82B923AE /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots */;
+			targetProxy = 1E9ADAB309A9F73BFEF52EF3 /* PBXContainerItemProxy */;
+		};
+		431DBCB9E033F068FB0A5CC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView";
+			target = 8358EE35BA950EE7AB3AA880 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView */;
+			targetProxy = A9430F499F7150112FC7B213 /* PBXContainerItemProxy */;
+		};
+		63FC842DF93317B0E5BD95D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-Expecta";
+			target = 304FEFFA921F755A53BA5CDA /* Pods-RUImageCaptureView_Tests-Expecta */;
+			targetProxy = C79E157EBF13D0D67EB41236 /* PBXContainerItemProxy */;
+		};
+		73D5E63580EA0A9F2CF41A32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase";
+			target = A16C0D89CC1B408C68B7982D /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase */;
+			targetProxy = AC87F0DA7B378D99861B58F5 /* PBXContainerItemProxy */;
+		};
+		80164529698E3000D86B34AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-Specta";
+			target = 8CAD5F8B4368965E7AE8BC83 /* Pods-RUImageCaptureView_Tests-Specta */;
+			targetProxy = 394C8DD65B47B51DC308B46F /* PBXContainerItemProxy */;
+		};
+		8368401639C3E2023E818878 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-Expecta";
+			target = 304FEFFA921F755A53BA5CDA /* Pods-RUImageCaptureView_Tests-Expecta */;
+			targetProxy = C42183DE5250CE9B1586ED9A /* PBXContainerItemProxy */;
+		};
+		AEC5522FC7099019819DDF44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView";
+			target = 80A5F06F373D90797FC37D4B /* Pods-RUImageCaptureView_Tests-RUImageCaptureView */;
+			targetProxy = A00D5FDFD777BDF90242F456 /* PBXContainerItemProxy */;
+		};
+		B63F5612EA764098CE90B051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Example-RUImageCaptureView";
+			target = 9DC3DE5EA32F40F7E05239A2 /* Pods-RUImageCaptureView_Example-RUImageCaptureView */;
+			targetProxy = B5FB57ED5E7DBF7541584120 /* PBXContainerItemProxy */;
+		};
+		DC92693FC346CFBF0663DD1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView";
+			target = 6F65DFAC0EB2739A51051DCC /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView */;
+			targetProxy = 11563972F309E8FF07033B1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E140DB76C491384CCDC6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7919AD0B551FEE135FDA022 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-RUImageCaptureView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15CD2DF48604626821200150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		26B29F0BDA5E515CA138D925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF307A76B86502A56EBE1DAC /* Pods-RUImageCaptureView_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta/Pods-RUImageCaptureView_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta/Pods-RUImageCaptureView_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C8065AAC118F8E98D02C977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BD335B44F36705A6583BC7 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Example-RUImageCaptureView/Pods-RUImageCaptureView_Example-RUImageCaptureView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Example-RUImageCaptureView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Example-RUImageCaptureView/Pods-RUImageCaptureView_Example-RUImageCaptureView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		346D661E6B757F459435FF2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D0AC7AA9A97FAEC9B9B294 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta+Snapshots/Pods-RUImageCaptureView_Tests-Expecta+Snapshots-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta+Snapshots/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta+Snapshots/Pods-RUImageCaptureView_Tests-Expecta+Snapshots.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Expecta_Snapshots;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		399B459AA30AF7E96F7C6B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46FF2BD788F6DD7FE278E833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF307A76B86502A56EBE1DAC /* Pods-RUImageCaptureView_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta/Pods-RUImageCaptureView_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta/Pods-RUImageCaptureView_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		604BB0DDA8F5DFF747C28E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7919AD0B551FEE135FDA022 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RUImageCaptureView_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7127081E35444602619167C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7919AD0B551FEE135FDA022 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RUImageCaptureView_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8050D68BD18F27D39A688D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D0AC7AA9A97FAEC9B9B294 /* Pods-RUImageCaptureView_Tests-Expecta+Snapshots-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta+Snapshots/Pods-RUImageCaptureView_Tests-Expecta+Snapshots-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta+Snapshots/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Expecta+Snapshots/Pods-RUImageCaptureView_Tests-Expecta+Snapshots.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Expecta_Snapshots;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A4B35E7FD5248B16F4CDBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD514FE5A341C0B1FA6DDE3C /* Pods-RUImageCaptureView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RUImageCaptureView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B660926077A1793AF2FE0D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A27B468C4BD798F4452ECFC /* Pods-RUImageCaptureView_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-Specta/Pods-RUImageCaptureView_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Specta/Pods-RUImageCaptureView_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CB36418451F5ADDD105588D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501B57ECA6509276085348AA /* Pods-RUImageCaptureView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RUImageCaptureView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E95ED500C60FDC286CDDFF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7919AD0B551FEE135FDA022 /* Pods-RUImageCaptureView_Tests-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-RUImageCaptureView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-RUImageCaptureView/Pods-RUImageCaptureView_Tests-RUImageCaptureView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0948E6C7422C0F2CA743F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7BFCCAFF4C6A8B7BD71E54 /* Pods-RUImageCaptureView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RUImageCaptureView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9960AA2A2871E39871A20D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BD335B44F36705A6583BC7 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RUImageCaptureView_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BD9A512BD985CB126044E4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F840B034CEBDBB1CA291369B /* Pods-RUImageCaptureView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RUImageCaptureView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0D60EC78892CE5492915198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A27B468C4BD798F4452ECFC /* Pods-RUImageCaptureView_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-Specta/Pods-RUImageCaptureView_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-Specta/Pods-RUImageCaptureView_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D50E2DE49BB115A924D7A04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BD335B44F36705A6583BC7 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RUImageCaptureView_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E114B9AA78008D2A8AA30F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BD335B44F36705A6583BC7 /* Pods-RUImageCaptureView_Example-RUImageCaptureView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Example-RUImageCaptureView/Pods-RUImageCaptureView_Example-RUImageCaptureView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Example-RUImageCaptureView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Example-RUImageCaptureView/Pods-RUImageCaptureView_Example-RUImageCaptureView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RUImageCaptureView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2F5249381FEE47ABD6FDE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 612F863F6066E0CEF65E0CC4 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5683786A1D848942A56B2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 612F863F6066E0CEF65E0CC4 /* Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase/Pods-RUImageCaptureView_Tests-FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D53220B1B5A3AC1B8FB460 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4B35E7FD5248B16F4CDBE2 /* Debug */,
+				A0948E6C7422C0F2CA743F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E0C8978A684FAC8816CE56C /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5683786A1D848942A56B2EB /* Debug */,
+				F2F5249381FEE47ABD6FDE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D693726676E7BA4E17A710 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Example-RUImageCaptureView-RUImageCaptureView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50E2DE49BB115A924D7A04D /* Debug */,
+				B9960AA2A2871E39871A20D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9602D0BDBC36A477F491E5 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-Specta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B660926077A1793AF2FE0D8 /* Debug */,
+				D0D60EC78892CE5492915198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E022794B8CBA94F7F681DF8 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB36418451F5ADDD105588D /* Debug */,
+				BD9A512BD985CB126044E4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		552C3A2A53AA2AE44496749E /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-Expecta+Snapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346D661E6B757F459435FF2D /* Debug */,
+				8050D68BD18F27D39A688D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E2C770463FE7BD7E629212D /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-RUImageCaptureView-RUImageCaptureView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7127081E35444602619167C2 /* Debug */,
+				604BB0DDA8F5DFF747C28E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B1D81732349E8C06527751B /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-RUImageCaptureView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E140DB76C491384CCDC6AC /* Debug */,
+				9E95ED500C60FDC286CDDFF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAEB29B8E3CC174A998AB6AD /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CD2DF48604626821200150 /* Debug */,
+				399B459AA30AF7E96F7C6B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93D721886C44A98FF0CF6A0 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Tests-Expecta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FF2BD788F6DD7FE278E833 /* Debug */,
+				26B29F0BDA5E515CA138D925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F848C6F82B98FDCB95AE3CC4 /* Build configuration list for PBXNativeTarget "Pods-RUImageCaptureView_Example-RUImageCaptureView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8065AAC118F8E98D02C977 /* Debug */,
+				E114B9AA78008D2A8AA30F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 321AFB1E8DF0123DF0767FE1 /* Project object */;
+}
