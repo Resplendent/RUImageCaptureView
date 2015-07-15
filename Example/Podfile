@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'RUImageCaptureView_Example', :exclusive => true do
+  pod "RUImageCaptureView", :path => "../"
+end
+
+target 'RUImageCaptureView_Tests', :exclusive => true do
+  pod "RUImageCaptureView", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
