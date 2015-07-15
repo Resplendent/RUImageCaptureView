@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "80A5F06F373D90797FC37D4B"
+               BlueprintIdentifier = "C7D495270E75D83A0139DAFA"
                BuildableName = "RUImageCaptureView.framework"
                BlueprintName = "Pods-RUImageCaptureView_Tests-RUImageCaptureView"
                ReferencedContainer = "container:Pods.xcodeproj">

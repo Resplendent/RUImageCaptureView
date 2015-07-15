@@ -52,6 +52,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Expecta_Snapshots.framework'
   install_framework 'FBSnapshotTestCase.framework'
   install_framework 'RUImageCaptureView.framework'
+  install_framework 'ResplendentUtilities.framework'
   install_framework 'Specta.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -59,5 +60,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Expecta_Snapshots.framework'
   install_framework 'FBSnapshotTestCase.framework'
   install_framework 'RUImageCaptureView.framework'
+  install_framework 'ResplendentUtilities.framework'
   install_framework 'Specta.framework'
 fi

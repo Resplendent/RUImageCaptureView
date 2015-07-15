@@ -21,5 +21,10 @@
     "RUImageCaptureView": [
       "Pod/Assets/*.png"
     ]
+  },
+  "dependencies": {
+    "ResplendentUtilities": [
+      "0.2.7"
+    ]
   }
 }
