@@ -25,7 +25,7 @@ SPEC CHECKSUMS:
   Expecta+Snapshots: ca15bfb57e7a0f78f86c7699c2c54ffacfa4ad2a
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
   ResplendentUtilities: fec98a58db6572b436b7deb151e091ba3cd301c6
-  RUImageCaptureView: e96f14dc8d4b9cb20a395612d9bdd0a469d156c2
+  RUImageCaptureView: a0ca8961146f2a33fd8980e06f4a2b49b3f8308a
   Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
 COCOAPODS: 0.37.2
