@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RUImageCaptureView"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "A UIView subclass that displays video input from camera devices."
 # s.description      = <<-DESC
 #                        An optional longer description of RUImageCaptureView
@@ -20,7 +20,10 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Resplendent/RUImageCaptureView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Richard Reitzfeld" => "richie.reitzfeld@gmail.com" }
+  s.authors          = {
+							"Benjamin Maer" => "ben@resplendent.co",
+							"Richard Reitzfeld" => "richie.reitzfeld@gmail.com"
+}
   s.source           = { :git => "https://github.com/Resplendent/RUImageCaptureView.git", :tag => "v#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -34,5 +37,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'ResplendentUtilities', '~> 0.2'
+  s.dependency 'ResplendentUtilities', '~> 0.4.0'
 end
