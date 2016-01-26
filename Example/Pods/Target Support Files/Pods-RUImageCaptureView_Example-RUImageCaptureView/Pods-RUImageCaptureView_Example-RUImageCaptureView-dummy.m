@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_RUImageCaptureView_Example_RUImageCaptureView : NSObject
-@end
-@implementation PodsDummy_Pods_RUImageCaptureView_Example_RUImageCaptureView
-@end

@@ -1,6 +1,0 @@
-framework module RUImageCaptureView {
-  umbrella header "Pods-RUImageCaptureView_Example-RUImageCaptureView-umbrella.h"
-
-  export *
-  module * { export * }
-}
