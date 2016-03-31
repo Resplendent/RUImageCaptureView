@@ -204,11 +204,6 @@
 	
 	__weak typeof(self) weakSelf = self;
 
-//	[self.previewLayer.connection setVideoOrientation:AVCaptureVideoOrientationLandscapeRight];
-
-//	AVCaptureVideoOrientation originlCaptureVideoOrientation = self.self.previewLayer.connection.videoOrientation;
-//	[self.previewLayer.connection setVideoOrientation:self.captureVideoOrientation];
-
 	[self.captureStillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
 
 		if (weakSelf)
@@ -217,7 +212,9 @@
 			{
 				NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
 
-				NSDictionary *metadata = (__bridge NSDictionary *)CMCopyDictionaryOfAttachments(kCFAllocatorDefault, imageSampleBuffer, kCMAttachmentMode_ShouldPropagate);
+				CFDictionaryRef metaDataRef = CMCopyDictionaryOfAttachments(kCFAllocatorDefault, imageSampleBuffer, kCMAttachmentMode_ShouldPropagate);
+				NSDictionary *metadata = (__bridge NSDictionary *)metaDataRef;
+				CFRelease(metaDataRef);
 
 				[weakSelf.imageDataCaptureDelegate ruImageCaptureView:self didCaptureImageData:imageData metaData:metadata];
 			}
@@ -228,8 +225,6 @@
 		}
 
 	}];
-
-//	[self.previewLayer.connection setVideoOrientation:originlCaptureVideoOrientation];
 
 	return TRUE;
 }
