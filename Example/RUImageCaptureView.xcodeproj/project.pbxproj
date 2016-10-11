@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E10C79BD27E01AB07AADE78 /* Pods_RUImageCaptureView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E13D4AAC06BA23C679C8BC /* Pods_RUImageCaptureView_Tests.framework */; };
+		05D0ACE2E35DD21CC1520126 /* Pods_RUImageCaptureView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23762996A073D81A079E4912 /* Pods_RUImageCaptureView_Tests.framework */; };
+		0D4472EDCA06BFDEF0B36A29 /* Pods_RUImageCaptureView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0F089AB4821304A252112C /* Pods_RUImageCaptureView_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		F502CCC262C3972C83772DB9 /* Pods_RUImageCaptureView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3A2104CAA47820A722A047 /* Pods_RUImageCaptureView_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B3A2104CAA47820A722A047 /* Pods_RUImageCaptureView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUImageCaptureView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11155026AE1D22DECE6CC3A5 /* Pods-RUImageCaptureView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		126C246D6BBA535F768B2CAF /* RUImageCaptureView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RUImageCaptureView.podspec; path = ../RUImageCaptureView.podspec; sourceTree = "<group>"; };
+		23762996A073D81A079E4912 /* Pods_RUImageCaptureView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUImageCaptureView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D8163DF1CFE8FB40EE7676 /* Pods-RUImageCaptureView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		497A164AC6048EBB2A7A08C8 /* Pods-RUImageCaptureView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5E0F089AB4821304A252112C /* Pods_RUImageCaptureView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUImageCaptureView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* RUImageCaptureView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RUImageCaptureView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,14 +60,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6338AEDE5EB17C389739F12F /* Pods-RUImageCaptureView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		67E13D4AAC06BA23C679C8BC /* Pods_RUImageCaptureView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUImageCaptureView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		96BA7476F58F38600065C24C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B8B33D1489F81A399F30BEC9 /* RUImageCaptureView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RUImageCaptureView.podspec; path = ../RUImageCaptureView.podspec; sourceTree = "<group>"; };
-		D3B7A72CECA8B20EBEB97044 /* Pods-RUImageCaptureView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D47CF2B6747FF5A1FC140C00 /* Pods-RUImageCaptureView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D5CDB356694E878784EDEDFF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8A12BA65C43D45E5108C3230 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D0CF812535B1773A2893F938 /* Pods-RUImageCaptureView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA1AED8C9F72496B553D47E0 /* Pods-RUImageCaptureView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUImageCaptureView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E0ECE05BF8BD93F541F96739 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F502CCC262C3972C83772DB9 /* Pods_RUImageCaptureView_Example.framework in Frameworks */,
+				0D4472EDCA06BFDEF0B36A29 /* Pods_RUImageCaptureView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,24 +86,13 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				3E10C79BD27E01AB07AADE78 /* Pods_RUImageCaptureView_Tests.framework in Frameworks */,
+				05D0ACE2E35DD21CC1520126 /* Pods_RUImageCaptureView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D8AE8BB9564FA3220886B0B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6338AEDE5EB17C389739F12F /* Pods-RUImageCaptureView_Example.debug.xcconfig */,
-				D47CF2B6747FF5A1FC140C00 /* Pods-RUImageCaptureView_Example.release.xcconfig */,
-				11155026AE1D22DECE6CC3A5 /* Pods-RUImageCaptureView_Tests.debug.xcconfig */,
-				D3B7A72CECA8B20EBEB97044 /* Pods-RUImageCaptureView_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +101,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				1D8AE8BB9564FA3220886B0B /* Pods */,
+				B9480602CB0972F0B398A854 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,8 +121,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				0B3A2104CAA47820A722A047 /* Pods_RUImageCaptureView_Example.framework */,
-				67E13D4AAC06BA23C679C8BC /* Pods_RUImageCaptureView_Tests.framework */,
+				5E0F089AB4821304A252112C /* Pods_RUImageCaptureView_Example.framework */,
+				23762996A073D81A079E4912 /* Pods_RUImageCaptureView_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,11 +175,22 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				B8B33D1489F81A399F30BEC9 /* RUImageCaptureView.podspec */,
-				96BA7476F58F38600065C24C /* README.md */,
-				D5CDB356694E878784EDEDFF /* LICENSE */,
+				126C246D6BBA535F768B2CAF /* RUImageCaptureView.podspec */,
+				8A12BA65C43D45E5108C3230 /* README.md */,
+				E0ECE05BF8BD93F541F96739 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B9480602CB0972F0B398A854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36D8163DF1CFE8FB40EE7676 /* Pods-RUImageCaptureView_Example.debug.xcconfig */,
+				497A164AC6048EBB2A7A08C8 /* Pods-RUImageCaptureView_Example.release.xcconfig */,
+				D0CF812535B1773A2893F938 /* Pods-RUImageCaptureView_Tests.debug.xcconfig */,
+				DA1AED8C9F72496B553D47E0 /* Pods-RUImageCaptureView_Tests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RUImageCaptureView_Example" */;
 			buildPhases = (
-				2D8B2714957F82C09F2581A1 /* Check Pods Manifest.lock */,
+				275675C19D833CEF0F3CC2F9 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				029A8F05FD2565460C056B07 /* Embed Pods Frameworks */,
-				08165011AEBFC968E5481DFC /* Copy Pods Resources */,
+				6266AFE7DC8330DE237EBA30 /* [CP] Embed Pods Frameworks */,
+				EF57FA50FEB29E8DCB112F7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,12 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "RUImageCaptureView_Tests" */;
 			buildPhases = (
-				02E53F547FF90D9D4FC3D504 /* Check Pods Manifest.lock */,
+				32F1803AD89B9424F62E5E1D /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				8152AC6C34C2BE8185715B5E /* Embed Pods Frameworks */,
-				65FD1BA4EF0947019A60A5CF /* Copy Pods Resources */,
+				22E6B0F1442A8F6DAE9661CF /* [CP] Embed Pods Frameworks */,
+				19F22CAD0B0E6878165DF0C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,9 +244,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RU;
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Richard Reitzfeld";
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Benjamin Maer";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 2P455BMH67;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -293,74 +296,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		029A8F05FD2565460C056B07 /* Embed Pods Frameworks */ = {
+		19F22CAD0B0E6878165DF0C2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		02E53F547FF90D9D4FC3D504 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		08165011AEBFC968E5481DFC /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D8B2714957F82C09F2581A1 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		65FD1BA4EF0947019A60A5CF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,19 +311,79 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8152AC6C34C2BE8185715B5E /* Embed Pods Frameworks */ = {
+		22E6B0F1442A8F6DAE9661CF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RUImageCaptureView_Tests/Pods-RUImageCaptureView_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		275675C19D833CEF0F3CC2F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32F1803AD89B9424F62E5E1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6266AFE7DC8330DE237EBA30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF57FA50FEB29E8DCB112F7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RUImageCaptureView_Example/Pods-RUImageCaptureView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -447,14 +450,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -467,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,20 +495,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -509,10 +522,11 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6338AEDE5EB17C389739F12F /* Pods-RUImageCaptureView_Example.debug.xcconfig */;
+			baseConfigurationReference = 36D8163DF1CFE8FB40EE7676 /* Pods-RUImageCaptureView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2P455BMH67;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RUImageCaptureView/RUImageCaptureView-Prefix.pch";
 				INFOPLIST_FILE = "RUImageCaptureView/RUImageCaptureView-Info.plist";
@@ -525,10 +539,11 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D47CF2B6747FF5A1FC140C00 /* Pods-RUImageCaptureView_Example.release.xcconfig */;
+			baseConfigurationReference = 497A164AC6048EBB2A7A08C8 /* Pods-RUImageCaptureView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2P455BMH67;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RUImageCaptureView/RUImageCaptureView-Prefix.pch";
 				INFOPLIST_FILE = "RUImageCaptureView/RUImageCaptureView-Info.plist";
@@ -541,7 +556,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11155026AE1D22DECE6CC3A5 /* Pods-RUImageCaptureView_Tests.debug.xcconfig */;
+			baseConfigurationReference = D0CF812535B1773A2893F938 /* Pods-RUImageCaptureView_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -565,7 +580,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3B7A72CECA8B20EBEB97044 /* Pods-RUImageCaptureView_Tests.release.xcconfig */;
+			baseConfigurationReference = DA1AED8C9F72496B553D47E0 /* Pods-RUImageCaptureView_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

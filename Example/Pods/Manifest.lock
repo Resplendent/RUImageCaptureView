@@ -1,35 +1,19 @@
 PODS:
-  - Expecta (1.0.5)
-  - Expecta+Snapshots (2.0.0):
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0.3)
-  - FBSnapshotTestCase (2.0.7):
-    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
-  - FBSnapshotTestCase/Core (2.0.7)
-  - FBSnapshotTestCase/SwiftSupport (2.0.7):
-    - FBSnapshotTestCase/Core
-  - ResplendentUtilities (0.4.8)
+  - ResplendentUtilities (0.4.13)
   - RUImageCaptureView (0.1.3):
     - ResplendentUtilities (~> 0.4.0)
-  - Specta (1.0.5)
 
 DEPENDENCIES:
-  - Expecta
-  - Expecta+Snapshots
-  - FBSnapshotTestCase
   - RUImageCaptureView (from `../`)
-  - Specta
 
 EXTERNAL SOURCES:
   RUImageCaptureView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
-  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  ResplendentUtilities: 50870795998123980c0d1ace0824ec507f7e9167
-  RUImageCaptureView: 67e60a9893d490363afa7106039ee206b4b088ed
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  ResplendentUtilities: 8da3fd8f89e6e88f4bf1d11c2958514ada5196d6
+  RUImageCaptureView: ff1ec57c4c905837c6cf464b6538bed1e3b7ecbe
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: f66951e9884956874f987eb29c4852157b2ab1fb
+
+COCOAPODS: 1.1.0.rc.3

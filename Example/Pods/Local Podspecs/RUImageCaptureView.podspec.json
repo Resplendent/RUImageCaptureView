@@ -2,8 +2,12 @@
   "name": "RUImageCaptureView",
   "version": "0.1.3",
   "summary": "A UIView subclass that displays video input from camera devices.",
+  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Resplendent/RUImageCaptureView",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "Benjamin Maer": "ben@resplendent.co",
     "Richard Reitzfeld": "richie.reitzfeld@gmail.com"
@@ -15,13 +19,7 @@
   "platforms": {
     "ios": "7.0"
   },
-  "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "RUImageCaptureView": [
-      "Pod/Assets/*.png"
-    ]
-  },
+  "source_files": "RUImageCaptureView/Classes/**/*",
   "dependencies": {
     "ResplendentUtilities": [
       "~> 0.4.0"
