@@ -2,8 +2,8 @@
 //  RUAppDelegate.m
 //  RUImageCaptureView
 //
-//  Created by Richard Reitzfeld on 07/15/2015.
-//  Copyright (c) 2015 Richard Reitzfeld. All rights reserved.
+//  Created by Benjamin Maer on 10/11/2016.
+//  Copyright (c) 2016 Benjamin Maer. All rights reserved.
 //
 
 #import "RUAppDelegate.h"

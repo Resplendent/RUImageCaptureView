@@ -1,11 +1,11 @@
 # RUImageCaptureView
 
-[![CI Status](http://img.shields.io/travis/Richard Reitzfeld/RUImageCaptureView.svg?style=flat)](https://travis-ci.org/Richard Reitzfeld/RUImageCaptureView)
+[![CI Status](http://img.shields.io/travis/Benjamin Maer/RUImageCaptureView.svg?style=flat)](https://travis-ci.org/Benjamin Maer/RUImageCaptureView)
 [![Version](https://img.shields.io/cocoapods/v/RUImageCaptureView.svg?style=flat)](http://cocoapods.org/pods/RUImageCaptureView)
 [![License](https://img.shields.io/cocoapods/l/RUImageCaptureView.svg?style=flat)](http://cocoapods.org/pods/RUImageCaptureView)
 [![Platform](https://img.shields.io/cocoapods/p/RUImageCaptureView.svg?style=flat)](http://cocoapods.org/pods/RUImageCaptureView)
 
-## Usage
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -22,7 +22,7 @@ pod "RUImageCaptureView"
 
 ## Author
 
-Richard Reitzfeld, richie.reitzfeld@gmail.com
+Benjamin Maer, ben@resplendent.co
 
 ## License
 

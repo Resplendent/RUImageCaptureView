@@ -1,4 +1,6 @@
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#endif
 
 #import "CALayer+RUMask.h"
 #import "CAShapeLayer+RUMessageBox.h"
@@ -42,7 +44,6 @@
 #import "UIImage+RUImageColorMasking.h"
 #import "UIImage+RUImageFromColor.h"
 #import "UIImage+RULaunchImage.h"
-#import "UIImage+RUResizing.h"
 #import "UIImage+RURotation.h"
 #import "UIImage+RUSaveToAssetsLibrary.h"
 #import "UIView+RUSnapshot.h"
@@ -81,7 +82,7 @@
 #import "RUActionSheetManagement.h"
 #import "RUCompatability.h"
 #import "RUImageCompatability.h"
-#import "RUScreenSizeToFloatConverter.h"
+#import "RUScreenHeightTypes.h"
 #import "RUStringCompatability.h"
 #import "RUClassOrNilUtil.h"
 #import "RUConditionalReturn.h"
@@ -90,6 +91,7 @@
 #import "RUDebug.h"
 #import "RUDebugging.h"
 #import "RUDLog.h"
+#import "RUEnumIsInRangeSynthesization.h"
 #import "RUExceptions.h"
 #import "RUNotifications.h"
 #import "RUProtocolOrNil.h"
