@@ -1,6 +1,6 @@
 PODS:
   - ResplendentUtilities (0.5.0)
-  - RUImageCaptureView (0.1.3):
+  - RUImageCaptureView (0.1.4):
     - ResplendentUtilities (~> 0.5.0)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ResplendentUtilities: df8bb038d91568f9e82ee88ba5796d5d68014cdf
-  RUImageCaptureView: 4a265ee6310dce96019a3d2d7d83dcc1875ef38b
+  RUImageCaptureView: 42c66c94bf0fff828964bcae4c747da782595e32
 
 PODFILE CHECKSUM: f66951e9884956874f987eb29c4852157b2ab1fb
 
