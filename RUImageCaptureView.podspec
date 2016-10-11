@@ -33,5 +33,5 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'RUImageCaptureView/Classes/**/*'
   
-  s.dependency 'ResplendentUtilities', '~> 0.4.0'
+  s.dependency 'ResplendentUtilities', '~> 0.5.0'
 end
