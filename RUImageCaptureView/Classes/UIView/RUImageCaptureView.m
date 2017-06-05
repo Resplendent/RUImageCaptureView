@@ -18,22 +18,29 @@
 
 @interface RUImageCaptureView ()
 
-@property (nonatomic, readonly) AVCaptureSession* captureSession;
-@property (nonatomic, strong) AVCaptureDeviceInput* deviceVideoInput;
--(void)updateDeviceVideoInputWithAVCaptureDevice:(AVCaptureDevice*)captureDevice;
-@property (nonatomic, readonly) AVCaptureVideoPreviewLayer* previewLayer;
-@property (nonatomic, readonly) AVCaptureStillImageOutput* captureStillImageOutput;
+#pragma mark - captureSession
+@property (nonatomic, readonly, strong, nullable) AVCaptureSession* captureSession;
 
-@property (nonatomic, readonly) UIView* tapToFocusView;
-@property (nonatomic, readonly) CGRect tapToFocusViewFrame;
-@property (nonatomic, readonly) CGRect tapToFocusViewFrame_animation_large;
+#pragma mark - deviceVideoInput
+@property (nonatomic, strong) AVCaptureDeviceInput* deviceVideoInput;
+-(void)deviceVideoInput_update_with_captureDevice:(AVCaptureDevice*)captureDevice;
+
+#pragma mark - previewLayer
+@property (nonatomic, readonly, strong, nullable) AVCaptureVideoPreviewLayer* previewLayer;
+
+#pragma mark - captureStillImageOutput
+@property (nonatomic, readonly, strong, nullable) AVCaptureStillImageOutput* captureStillImageOutput;
+
+@property (nonatomic, readonly, strong, nullable) UIView* tapToFocusView;
+-(CGRect)tapToFocusViewFrame;
+-(CGRect)tapToFocusViewFrame_animation_large;
 -(CGRect)tapToFocusViewFrameWithSize:(CGSize)tapToFocusSize;
 @property (nonatomic, assign) CGSize tapToFocusSize_animation_large;
 @property (nonatomic, assign) BOOL tapToFocusViewVisibility;
 @property (nonatomic, assign) CGPoint tapToFocusMiddle;
 -(void)updateTapToFocusBorderColor;
 
-@property (nonatomic, readonly) UIView* animatingTapToFocusView;
+@property (nonatomic, readonly, strong, nullable) UIView* animatingTapToFocusView;
 -(void)performTapToFocusAnimation;
 -(void)cancelCurrentAnimatingTapToFocusView;
 
@@ -58,23 +65,23 @@
 {
 	kRUConditionalReturn(self.captureDevicePosition == captureDevicePosition, NO);
 
-	[self updateDeviceVideoInputWithAVCaptureDevice:[AVCaptureDevice ru_captureDeviceForPosition:captureDevicePosition]];
+	[self deviceVideoInput_update_with_captureDevice:[AVCaptureDevice ru_captureDeviceForPosition:captureDevicePosition]];
 }
 
 #pragma mark - deviceVideoInput
--(void)updateDeviceVideoInputWithAVCaptureDevice:(AVCaptureDevice*)captureDevice
+-(void)deviceVideoInput_update_with_captureDevice:(AVCaptureDevice*)captureDevice
 {
 	kRUConditionalReturn(captureDevice == nil, YES);
 
 	NSError* deviceInputError = nil;
-	AVCaptureDeviceInput* deviceVideoInput = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&deviceInputError];
+	AVCaptureDeviceInput* const deviceVideoInput = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&deviceInputError];
 	kRUConditionalReturn(deviceInputError != nil, YES);
 
 	[self setDeviceVideoInput:deviceVideoInput];
 	NSAssert(deviceInputError == nil, @"deviceInputError: %@",deviceInputError);
 }
 
--(void)setDeviceVideoInput:(AVCaptureDeviceInput *)deviceVideoInput
+-(void)setDeviceVideoInput:(AVCaptureDeviceInput* const )deviceVideoInput
 {
 	kRUConditionalReturn(self.deviceVideoInput == deviceVideoInput, NO);
 
@@ -109,13 +116,13 @@
 		_previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.captureSession];
 		[self.previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
 		
-		CALayer *rootLayer = self.layer;
+		CALayer* const rootLayer = self.layer;
 		[rootLayer setMasksToBounds:YES];
 		[rootLayer addSublayer:self.previewLayer];
 
 		//Output
 		_captureStillImageOutput = [[AVCaptureStillImageOutput alloc] init];
-		NSDictionary *outputSettings =
+		NSDictionary* const outputSettings =
 		@{
 		  AVVideoCodecKey	: AVVideoCodecJPEG,
 		  };
@@ -154,7 +161,7 @@
 }
 
 #pragma mark - Touches
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+-(void)touchesBegan:(NSSet* const )touches withEvent:(UIEvent* const )event
 {
 	[super touchesBegan:touches withEvent:event];
 
@@ -163,20 +170,20 @@
 	[self cancelCurrentAnimatingTapToFocusView];
 	[self setTapToFocusViewVisibility:YES];
 
-	UITouch* anyTouch = touches.anyObject;
+	UITouch* const anyTouch = touches.anyObject;
 	[self setTapToFocusMiddle:[anyTouch locationInView:self]];
 }
 
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+-(void)touchesMoved:(NSSet* const )touches withEvent:(UIEvent* const )event
 {
 	kRUConditionalReturn(self.enableTapToFocus == false, NO);
 	kRUConditionalReturn(self.tapToFocusViewVisibility == false, NO);
 
-	UITouch* anyTouch = touches.anyObject;
+	UITouch* const anyTouch = touches.anyObject;
 	[self setTapToFocusMiddle:[anyTouch locationInView:self]];
 }
 
--(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+-(void)touchesCancelled:(NSSet* const )touches withEvent:(UIEvent* const )event
 {
 	kRUConditionalReturn(self.enableTapToFocus == false, NO);
 	kRUConditionalReturn(self.tapToFocusViewVisibility == false, NO);
@@ -184,44 +191,46 @@
 	[self setTapToFocusViewVisibility:NO];
 }
 
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+-(void)touchesEnded:(NSSet* const )touches withEvent:(UIEvent* const )event
 {
 	kRUConditionalReturn(self.enableTapToFocus == false, NO);
 	kRUConditionalReturn(self.tapToFocusViewVisibility == false, NO);
 
-	UITouch* anyTouch = touches.anyObject;
+	UITouch* const anyTouch = touches.anyObject;
 	CGPoint touchPoint = [anyTouch locationInView:self];
 	[self setTapToFocusMiddle:touchPoint];
 	[self performTapToFocusAnimation];
 	[self focusCameraAtViewPoint:touchPoint];
 }
 
-#pragma mark - Image capture
+#pragma mark - imageCapture
 -(BOOL)performImageDataCapture
 {
-	AVCaptureConnection *videoConnection = [self.captureStillImageOutput ru_getAVCaptureConnectionWithPortMediaType:AVMediaTypeVideo];
+	AVCaptureConnection* const videoConnection = [self.captureStillImageOutput ru_getAVCaptureConnectionWithPortMediaType:AVMediaTypeVideo];
 	kRUConditionalReturn_ReturnValueFalse(videoConnection == nil, YES);
-	
-	__weak typeof(self) weakSelf = self;
 
-	[self.captureStillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
+	__weak typeof(self) const self_weak = self;
 
-		if (weakSelf)
+	[self.captureStillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError* const error) {
+
+		kRUConditionalReturn(self_weak == nil, NO);
+
+		if ((error == nil) && (imageSampleBuffer != nil))
 		{
-			if ((error == nil) && (imageSampleBuffer != nil))
-			{
-				NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
+			NSData* const imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
+			
+			CFDictionaryRef const metaDataRef = CMCopyDictionaryOfAttachments(kCFAllocatorDefault, imageSampleBuffer, kCMAttachmentMode_ShouldPropagate);
+			NSDictionary* const metadata = (__bridge NSDictionary* const )metaDataRef;
+			CFRelease(metaDataRef);
 
-				CFDictionaryRef metaDataRef = CMCopyDictionaryOfAttachments(kCFAllocatorDefault, imageSampleBuffer, kCMAttachmentMode_ShouldPropagate);
-				NSDictionary *metadata = (__bridge NSDictionary *)metaDataRef;
-				CFRelease(metaDataRef);
-
-				[weakSelf.imageDataCaptureDelegate ruImageCaptureView:self didCaptureImageData:imageData metaData:metadata];
-			}
-			else
-			{
-				[weakSelf.imageDataCaptureDelegate ruImageCaptureView:self didFailCaptureImageDataCaptureWithError:error];
-			}
+			[self_weak.imageDataCaptureDelegate ruImageCaptureView:self_weak
+											   didCaptureImageData:imageData
+														  metaData:metadata];
+		}
+		else
+		{
+			[self_weak.imageDataCaptureDelegate ruImageCaptureView:self_weak
+						   didFailCaptureImageDataCaptureWithError:error];
 		}
 
 	}];
@@ -229,7 +238,6 @@
 	return TRUE;
 }
 
-#pragma mark - imageCaptureIsRunning
 -(BOOL)imageCaptureIsRunning
 {
 	return self.previewLayer.session.isRunning;
@@ -238,7 +246,7 @@
 -(void)setImageCaptureIsRunning:(BOOL)imageCaptureIsRunning
 {
 	kRUConditionalReturn(self.imageCaptureIsRunning == imageCaptureIsRunning, NO)
-
+	
 	if (imageCaptureIsRunning)
 	{
 		[self.previewLayer.session startRunning];
@@ -272,7 +280,7 @@
 }
 
 #pragma mark - tapToFocusBorderColor
--(void)setTapToFocusBorderColor:(UIColor *)tapToFocusBorderColor
+-(void)setTapToFocusBorderColor:(UIColor* const )tapToFocusBorderColor
 {
 	kRUConditionalReturn(self.tapToFocusBorderColor == tapToFocusBorderColor, NO);
 
@@ -375,7 +383,7 @@
 
 	[self cancelCurrentAnimatingTapToFocusView];
 
-	UIView* tapToFocusView = self.tapToFocusView;
+	UIView* const tapToFocusView = self.tapToFocusView;
 	_tapToFocusView = nil;
 	_animatingTapToFocusView = tapToFocusView;
 
@@ -392,11 +400,11 @@
 		[tapToFocusView.layer setCornerRadius:cornerRadius_large];
 		[tapToFocusView.layer setBounds:(CGRect){.size = tapToFocusViewFrame_animation_large.size}];
 		
-		CABasicAnimation *animation_cornerRadius = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+		CABasicAnimation* const animation_cornerRadius = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
 		
-		CABasicAnimation *animation_bounds = [CABasicAnimation animationWithKeyPath:@"bounds"];
+		CABasicAnimation* const animation_bounds = [CABasicAnimation animationWithKeyPath:@"bounds"];
 		
-		CAAnimationGroup *animation_group = [CAAnimationGroup animation];
+		CAAnimationGroup* const animation_group = [CAAnimationGroup animation];
 		animation_group.duration = duration;
 		animation_group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
 		animation_group.animations = @[animation_cornerRadius,
@@ -437,7 +445,7 @@
 	kRUConditionalReturn(self.tapToFocusIsSupported == false, YES);
 	kRUConditionalReturn(self.enableTapToFocus == false, YES);
 
-	AVCaptureDevice *device = self.deviceVideoInput.device;
+	AVCaptureDevice* const device = self.deviceVideoInput.device;
 	
 	NSError* lockError = nil;
 	BOOL lockSuccess = [device lockForConfiguration:&lockError];
@@ -472,7 +480,7 @@
 #pragma mark - flash
 -(BOOL)flashAvailable
 {
-	AVCaptureDevice *device = self.deviceVideoInput.device;
+	AVCaptureDevice* const device = self.deviceVideoInput.device;
 	return (device.hasFlash && device.flashAvailable);
 }
 
@@ -486,10 +494,10 @@
 	kRUConditionalReturn(self.flashAvailable == false, YES);
 	kRUConditionalReturn(self.flashMode == flashMode, NO);
 
-	AVCaptureDevice *device = self.deviceVideoInput.device;
+	AVCaptureDevice* const device = self.deviceVideoInput.device;
 
 	NSError* lockError = nil;
-	BOOL lockSuccess = [device lockForConfiguration:&lockError];
+	BOOL const lockSuccess = [device lockForConfiguration:&lockError];
 
 	if (lockSuccess && (lockError == nil))
 	{
@@ -503,11 +511,11 @@
 	}
 }
 
-#pragma mark - UIInterfaceOrientation
-+(UIInterfaceOrientation)uiInterfaceOrientationForImageOrientationFromInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-																	 captureDevicePosition:(AVCaptureDevicePosition)captureDevicePosition
+#pragma mark - interfaceOrientation
++(UIInterfaceOrientation)interfaceOrientationForImageOrientationFromInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+																   captureDevicePosition:(AVCaptureDevicePosition)captureDevicePosition
 {
-	NSDictionary* interfaceOrientationToInterfaceOrientationForImageOrientationMapping =
+	NSDictionary* const interfaceOrientationToInterfaceOrientationForImageOrientationMapping =
  @{
    @(UIInterfaceOrientationPortrait)			: @(UIInterfaceOrientationLandscapeRight),
    @(UIInterfaceOrientationPortraitUpsideDown)	: @(UIInterfaceOrientationLandscapeLeft),
