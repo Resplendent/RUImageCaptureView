@@ -27,5 +27,5 @@ Provides `RUImageCaptureView`, a subclass of `UIView` that displays video input 
 
   s.source_files = 'RUImageCaptureView/Classes/**/*'
   
-  s.dependency 'ResplendentUtilities', '~> 0.5.0'
+  s.dependency 'ResplendentUtilities', '~> 0.5.2'
 end
