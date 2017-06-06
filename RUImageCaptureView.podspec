@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RUImageCaptureView'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A subclass of `UIView` that displays video input from camera devices.'
 
   s.description      = <<-DESC
