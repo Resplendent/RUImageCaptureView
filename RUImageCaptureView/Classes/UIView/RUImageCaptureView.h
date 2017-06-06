@@ -16,22 +16,27 @@
 
 @interface RUImageCaptureView : UIView
 
-@property (nonatomic, assign) id<RUImageCaptureView_imageDataCaptureDelegate> imageDataCaptureDelegate;
+#pragma mark - imageCapture
+@property (nonatomic, weak, nullable) id<RUImageCaptureView_imageDataCaptureDelegate> imageDataCaptureDelegate;
 -(BOOL)performImageDataCapture; //Returns TRUE if attempt was made, otherwise FALSE.
 
 @property (nonatomic, assign) BOOL imageCaptureIsRunning; //Shouldn't be used to disable camera streaming. If disabled, cannot capture an image from it.
 
+#pragma mark - TapToFocus
 @property (nonatomic, readonly) BOOL tapToFocusIsSupported;
 @property (nonatomic, assign) BOOL enableTapToFocus;
 @property (nonatomic, assign) CGSize tapToFocusSize;
-@property (nonatomic, strong) UIColor* tapToFocusBorderColor;
+@property (nonatomic, strong, nullable) UIColor* tapToFocusBorderColor;
 
+#pragma mark - flash
 @property (nonatomic, readonly) BOOL flashAvailable;
 @property (nonatomic, assign) AVCaptureFlashMode flashMode;
 
+#pragma mark - captureDevicePosition
 @property (nonatomic, assign) AVCaptureDevicePosition captureDevicePosition;
 
-+(UIInterfaceOrientation)uiInterfaceOrientationForImageOrientationFromInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-																	 captureDevicePosition:(AVCaptureDevicePosition)captureDevicePosition;
+#pragma mark - interfaceOrientation
++(UIInterfaceOrientation)interfaceOrientationForImageOrientationFromInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+																   captureDevicePosition:(AVCaptureDevicePosition)captureDevicePosition;
 
 @end

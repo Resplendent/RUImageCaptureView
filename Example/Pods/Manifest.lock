@@ -1,7 +1,7 @@
 PODS:
-  - ResplendentUtilities (0.5.0)
-  - RUImageCaptureView (0.1.4):
-    - ResplendentUtilities (~> 0.5.0)
+  - ResplendentUtilities (0.5.2)
+  - RUImageCaptureView (0.1.5):
+    - ResplendentUtilities (~> 0.5.2)
 
 DEPENDENCIES:
   - RUImageCaptureView (from `../`)
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ResplendentUtilities: df8bb038d91568f9e82ee88ba5796d5d68014cdf
-  RUImageCaptureView: 42c66c94bf0fff828964bcae4c747da782595e32
+  ResplendentUtilities: 76f87cca03bda3e246c31bba7bd74fe34ceb16ea
+  RUImageCaptureView: e169f3335f49fe0f81a4b3d83b4160f05e57680e
 
-PODFILE CHECKSUM: f66951e9884956874f987eb29c4852157b2ab1fb
+PODFILE CHECKSUM: 9835f1795fb7955b1b09023a0c06827fbb9533e9
 
-COCOAPODS: 1.1.0.rc.3
+COCOAPODS: 1.2.1
